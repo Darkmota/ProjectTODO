@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./lib/bootstrap.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Bizplus</title>
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand " href="#"><img src="./imgs/logo.svg" class="img-responsive"></a>
+        <!-- 响应式按钮 -->
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbars"
+            aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbars">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">ホーム</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">会社概要</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown">
+                        <a class="dropdown-item" href="#">経営理念</a>
+                        <a class="dropdown-item" href="#">代表挨拶</a>
+                        <a class="dropdown-item" href="#">組織図</a>
+                        <a class="dropdown-item" href="#">セキュリティポリシー</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">事業概要</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown">
+                        <a class="dropdown-item" href="#">事業紹介</a>
+                        <a class="dropdown-item" href="#">品質管理</a>
+                        <a class="dropdown-item" href="#">プロジェクト管理</a>
+                        <a class="dropdown-item" href="#">開発実績</a>
+                        <a class="dropdown-item" href="#">開発言語と環境</a>
+                        <a class="dropdown-item" href="#">外国人材派遣事業</a>
+                        <a class="dropdown-item" href="#">受託開発</a>
+                        <a class="dropdown-item" href="#">その他事業概要</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">福利厚生</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown">
+                        <a class="dropdown-item" href="#">社内教育について</a>
+                        <a class="dropdown-item" href="#">社風について</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">採用情報</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">Bizplusについて</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown">
+
+                        <a class="dropdown-item" href="#">お問い合せ</a>
+                        <a class="dropdown-item" href="#">アクセス</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="btn-group " style="margin-right: 8px;">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    日本语
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">日本语</a>
+                    <a class="dropdown-item" href="#">中文</a>
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
+            </div>
+            <form class="form-inline ">
+                <div class="input-group ">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button">Search</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </nav>
+    <!-- main -->
+    <div class="container-fiuled">
+        <!-- carousel here -->
+        <div id="carousel" class="carousel carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel" data-slide-to="0" class=""></li>
+                <li data-target="#carousel" data-slide-to="1" class=""></li>
+                <li data-target="#carousel" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="./imgs/800.jpg" class="d-block w-100 carousel-img" alt="carousel-img">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Bizplus_1</h4>
+                            <p> </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="./imgs/700.jpg" class="d-block w-100 carousel-img" alt="carousel-img">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Bizplus_2</h4>
+                            <p> </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <a href="#" rel="noopener noreferrer">
+                        <img src="./imgs/600.jpg" class="d-block w-100 carousel-img" alt="carousel-img">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4>Bizplus_3</h4>
+                            <p> </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- server -->
+        <div class="center-align">
+            <h2 class="bottom-bar">サービス</h2>
+        </div>
+
+        <!-- Card -->
+        <div class="main-card">
+            <div class="card-deck">
+                <div class="card">
+                    <img class="card-img-top" src="./imgs/card-1.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">会社概要-Company Profile</h5>
+                        <p class="card-text">弊社のご紹介</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-primary btn-sm">詳しくはこちら</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./imgs/card-2.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            事業概要-Business Profile </h5>
+                        <p class="card-text">
+                            外国人派遣事業、ソフトウェア受託事業、コンサルタント事業など、幅広いソリューションをご提供いたします。 </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-primary btn-sm">詳しくはこちら</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./imgs/card-3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            採用情報-Recruitment </h5>
+                        <p class="card-text">
+                            エンジニアおよび一般職の募集をしております。事業拡大に伴い、新卒・第二新卒・中途採用にも力を入れて採用しています。 </p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-primary btn-sm">詳しくはこちら</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="./imgs/card-4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">生体認証-Recruitment</h5>
+                        <p class="card-text">高度な認証をデジタルの世界の入口に構築することで、「誰もが安心してデジタルの利便性を最大活用できる社会」を実現していきます。</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-outline-primary btn-sm">詳しくはこちら</button>
+                    </div>
+                </div>
+            </div>
+            <!-- more -->
+            <div class="wrapper">
+                <a href="#" class="button" style="text-decoration:none;">もっと見る</a>
+            </div>
+        </div>
+
+        <!-- server -->
+        <div class="center-align">
+            <h2 class="bottom-bar" style="margin-bottom: 6px;">ニュース</h2>
+        </div>
+        <!-- News -->
+        <div class="main-content">
+            <div class="row justify-content-md-center">
+                <div class="news col-12 col-md-10">
+                    <p>
+                        <hr>
+                    </p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge badge-pill badge-primary">お知らせ</span>
+                            <span>2019年1月29日</span>
+                            <img src="./imgs/r.svg" alt="">
+                            <a href="#">(日本語) サイトリニューアルしました</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-pill badge-secondary">お知らせ</span>
+                            <span>2019年2月4日</span>
+                            <img src="./imgs/r.svg" alt="">
+                            <a href="#">10連休始まる 高速道路や新幹線など混雑</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-pill badge-danger">お知らせ</span>
+                            <span>2019年2月24日</span>
+                            <img src="./imgs/r.svg" alt="">
+                            <a href="#">スリランカ テロ事件の捜索で銃撃戦に 15人死亡</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-pill badge-primary">お知らせ</span>
+                            <span>2019年3月29日</span>
+                            <img src="./imgs/r.svg" alt="">
+                            <a href="#">両陛下とパラリンピック 障害者スポーツ普及・発展に心寄せる</a>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge badge-pill badge-danger">お知らせ</span>
+                            <span>2019年4月15日</span>
+                            <img src="./imgs/r.svg" alt="">
+                            <a href="#">米ＣＩＡがインスタグラム開設で話題</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- news-lists -->
+            <div class="wrapper">
+                <a href="#" class="button" style="text-decoration:none;">ニュース一覧</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------ contact start ---------->
+    <div class="row justify-content-md-center">
+        <div id="contact" class="col-12 col-md-8 ">
+
+            <div class="center-align">
+                <h2 class="bottom-bar">お問い合わせ</h2>
+            </div>
+
+            <form class="contact-from" action="#" method="post">
+                <label for="name">名</label>
+                <input type="text" id="name" name="name" value="">
+                <label for="email">電子メイル</label>
+                <input type="text" id="email" name="email" value="">
+                <label for="message">メッセージ</label>
+                <input type="text" id="message" name="message" value="">
+                <div class="wrapper">
+                    <a href="#" class="button" style="text-decoration:none; ">提出する</a>
+                </div>
+            </form>
+
+            <!------------ contact end ----------->
+        </div>
+    </div>
+    <!-- top -->
+
+    <!-- <div class="top">
+        <span title="Top" id="topArrow"><img src="./imgs/top.svg" alt=""></span>
+    </div> -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-inner">
+
+            <p>
+                <strong>Bizplus </strong>/ </span>
+                <span>東京都新宿区富久町1番5号 / </span></span>
+                <span>富久町第5服部ビル2階 </span><br>
+                <span>TEL : 03-6709-8260</span><br>
+                <span>FAX : 03-6709-8261</span><br>
+                <small>© Bizplus Design by XQ.</small>
+            </p>
+        </div>
+    </footer>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script>
+        $("#topArrow").click(function () {
+            $(document).scrollTop(0);
+        })
+    </script>
+</body>
+
+</html>
