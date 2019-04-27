@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link href='http://fonts.font.im/css?family=Lato' rel='stylesheet' type='text/css'>
+    <title>Website for Small Business</title>
+</head>
+
+<body>
+    <!-------------- nav --------------->
+    <nav class="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#prices">PRICES</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!--------------- main start ----------------->
+    <main class="content">
+        <header class="header">
+            <h1>LOGO</h1>
+        </header>
+
+        <!----------- slider start ----------->
+        <div class="slider-box">
+
+            <div class="slider">
+                <img src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=3b51135ce94c11a673e83c6ecabf833f"
+                    width="1000" height="550" alt="">
+                <div class="left-top">
+                    <span class="tag animate-bottom">Best Solution</span>
+                </div>
+            </div>
+            <div class="slider" style="display:none">
+                <img src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=ce0f66c614c373e2983bdc18df7af3d1"
+                    width="1000" height="550" alt="">
+                <div class="middle">
+                    <span class="tag animate-bottom">Best Quality</span>
+                </div>
+            </div>
+            <div class="slider" style="display:none">
+                <img src="https://images.unsplash.com/photo-1485988412941-77a35537dae4?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=a5297685e70200d995b78d0b618dded4"
+                    width="1000" height="550" alt="">
+                <div class="right-top">
+                    <span class="tag animate-bottom">Best Services</span>
+                </div>
+            </div>
+
+            <div class="tool-bar">
+                <div class="row">
+                    <div class="col l1">
+                        <span class="page-btn" onclick="page(-1)"><i class="fa fa-chevron-circle-left"
+                                aria-hidden="true"></i></span>
+                    </div>
+                    <div class="col l10">
+                        <div class="center-align">
+                            <span class="dots active" onclick="go(1)"></span>
+                            <span class="dots" onclick="go(2)"></span>
+                            <span class="dots" onclick="go(3)"></span>
+                        </div>
+                    </div>
+                    <div class="col l1">
+                        <div class="right-align">
+                            <span class="page-btn" onclick="page(1)"><i class="fa fa-chevron-circle-right"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------- slider end ------------>
+        </div>
+
+        <!--------------- main end -------------->
+
+        <!------------ services start ---------->
+        <div id="services">
+            <div class="center-align">
+                <h2 class="bottom-bar">SERVICES</h2>
+            </div>
+            <div class="row">
+                <div class="col l3 m6 s12">
+                    <div class="box-1">
+                        <h3>Web Development</h3>
+                        <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                            wudhsikcn sdjnxzde.</p>
+                    </div>
+                </div>
+
+                <div class="col l3 m6 s12">
+                    <div class="box-2">
+                        <h3>Ecommerce Websites</h3>
+                        <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                            wudhsikcn sdjnxzde.</p>
+                    </div>
+                </div>
+
+                <div class="col l3 m6 s12">
+                    <div class="box-3">
+                        <h3>Digital Marketing</h3>
+                        <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                            wudhsikcn sdjnxzde.</p>
+                    </div>
+                </div>
+
+                <div class="col l3 m6 s12">
+                    <div class="box-4">
+                        <h3>Mobile Apps</h3>
+                        <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                            wudhsikcn sdjnxzde.</p>
+                    </div>
+                </div>
+            </div>
+            <!------------ services end ----------->
+        </div>
+
+        <!------------ prices start ---------->
+        <div id="prices">
+            <div class="center-align">
+                <h2 class="bottom-bar">PRICES</h2>
+            </div>
+            <div class="row">
+                <div class="col l4 s12">
+                    <div class="card-box">
+                        <ul class="card-list">
+                            <li class="header">
+                                <h3>Silver Package</h3>
+                            </li>
+                            <li>Docht</li>
+                            <li>Thokij</li>
+                            <li>Kranyd</li>
+                            <li>Liknm</li>
+                            <li>
+                                <h2>$ 30</h2>
+                                <p>per month</p>
+                            </li>
+                            <li class="footer">
+                                <button class="button">Purchase</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l4 s12">
+                    <div class="card-box">
+                        <ul class="card-list">
+                            <li class="header">
+                                <h3>Gold Package</h3>
+                            </li>
+                            <li>Docht</li>
+                            <li>Thokij</li>
+                            <li>Kranyd</li>
+                            <li>Liknm</li>
+                            <li>
+                                <h2>$ 50</h2>
+                                <p>per month</p>
+                            </li>
+                            <li class="footer">
+                                <button class="button">Purchase</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col l4 s12">
+                    <div class="card-box">
+                        <ul class="card-list">
+                            <li class="header">
+                                <h3>Platinum Package</h3>
+                            </li>
+                            <li>Docht</li>
+                            <li>Thokij</li>
+                            <li>Kranyd</li>
+                            <li>Liknm</li>
+                            <li>
+                                <h2>$ 80</h2>
+                                <p>per month</p>
+                            </li>
+                            <li class="footer">
+                                <button class="button">Purchase</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <!------------ prices end ----------->
+        </div>
+
+        <!------------ about start ---------->
+        <div id="about">
+            <div class="center-align">
+                <h2 class="bottom-bar">ABOUT US</h2>
+            </div>
+
+            <div class="row">
+                <div class="col l4 s12">
+                    <div class="card-box">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=1dfa6e6332bcffd3211d385b48eb7755"
+                                width="400" height="250" alt="Gary">
+                            <div class="box-content">
+                                <h2>Gary</h2>
+                                <p>CEO</p>
+                                <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                                    wudhsikcn sdjnxzde.</p>
+                                <button class="button">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l4 s12">
+                    <div class="card-box">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1496671431883-c102df9ae8f9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=169d4b32dd981bf728b836bae8f34359"
+                                width="400" height="250" alt="Helen">
+                            <div class="box-content">
+                                <h2>Helen</h2>
+                                <p>CFO</p>
+                                <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                                    wudhsikcn sdjnxzde.</p>
+                                <button class="button">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l4 s12">
+                    <div class="card-box">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=3e972946a9c51391c4dc5ddc1cb05f2f"
+                                width="400" height="250" alt="Andrew">
+                            <div class="box-content">
+                                <h2>Andrew</h2>
+                                <p>CTO</p>
+                                <p>Kjwy ehdyestd cnjdfush sjncg hyijnfckn, sjnd dkncfhj djnck advtntijemnh fyhsnfylc ah
+                                    wudhsikcn sdjnxzde.</p>
+                                <button class="button">Contact</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------------ about end ----------->
+        </div>
+
+        <!------------ contact start ---------->
+        <div id="contact">
+
+            <div class="center-align">
+                <h2 class="bottom-bar">CONTACT</h2>
+            </div>
+
+            <form class="" action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" value="">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" value="">
+                <label for="message">Message</label>
+                <input type="text" id="message" name="message" value="">
+                <button class="button">Submit</button>
+            </form>
+
+            <!------------ contact end ----------->
+        </div>
+
+        <!-------------- main end ------------->
+    </main>
+
+    <!---------------- footer -------------->
+    <footer class="footer">
+        <p class="icon-bar">
+            <a href="#" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+            <a href="#" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        </p>
+        <p>
+            Powered by <a href="http://www.wisdomofwater.com" target="_blank"> WisdomofWater.com</a>
+        </p>
+    </footer>
+
+    <script src="bw.js" charset="utf-8"></script>
+
+</body>
+
+</html>
