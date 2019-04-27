@@ -9,11 +9,20 @@ html,body{
     width: auto; 
 }
 
+#navbar-collapse{
+    margin-top: 15px;
+}
+
+.dropdown{
+    border-right: 1px solid #eee;
+}
+
 #search{
-    width: 200px;
-    float: right;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
+}
+
+#language{
+    margin: 10px;
 }
 
 #myCarousel{
@@ -29,7 +38,7 @@ html,body{
 
 .card{
     width:30%;
-    height: 420px;
+    height: 420px auto;
     float: left;
     margin: 1%;
     box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,.1), 0 0.9375rem 1.40625rem rgba(90,97,105,.1), 0 0.25rem 0.53125rem rgba(90,97,105,.12), 0 0.125rem 0.1875rem rgba(90,97,105,.1);
@@ -84,6 +93,32 @@ html,body{
     color: #dd0000; 
 }
 
+#news>p{
+    width: 200px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+    position: relative;
+    top: 50px;
+}
+
+#news>p::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 250px;
+    height: 5px;
+    background-color: #0274cc;
+}
+
+#backTop{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
 
 .foot-wrap{
 	background-color: #5f5e63;
