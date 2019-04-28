@@ -1,0 +1,106 @@
+.g-navbar {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.125);
+  padding: 0;
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  opacity: 1;
+}
+
+.nav {
+  height: 80px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.nav .img-responsive {
+  width: 175px;
+  height: auto;
+}
+
+
+.nav-menu,
+.nav-right {
+  padding: 0;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 0 8px 0;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar {
+  max-width: 600px;
+  line-height: 60px;
+  font-weight: 650;
+}
+
+.navbar div {
+  /* color: #000; */
+  margin-right: 25px;
+}
+
+.menu-item:hover {
+  color: #006EB7;
+  transition: all .35s;
+  cursor: pointer;
+}
+
+.svg-down {
+  transform: rotate(90deg);
+  transition: all .35s;
+}
+
+.navbar .svg-down {
+  transition: all .35s;
+}
+
+.menu-item:hover>span>svg {
+  transition: all .35s;
+  transform: rotate(270deg);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search .icon {
+  margin: auto;
+  margin-top: 3.5px;
+}
+
+.nav-lan {
+  display: flex;
+  align-items: center;
+}
+
+.nav-lan>span {
+  margin-right: 5px;
+}
+
+.nav-lan:hover {
+  color: #006EB7;
+  transition: all .35s;
+  cursor: pointer;
+}
+
+.nav-lan:hover>svg {
+  transition: all .35s;
+  transform: rotate(270deg);
+
+}
