@@ -102,13 +102,80 @@
   transition-timing-function: ease-out;
 }
 
+/* section */
+.index--recruit--btm {
+  margin-top: 5rem;
+  width: 100%;
+  height: 270px;
+}
+
+.bg {
+  background-image: url("./../imgs/business/513-1920x968.jpg");
+  /* background-size: 100% ; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.bg::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.content-inner-y {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-text {
+  z-index: 5;
+  padding: 15px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-box {
+  z-index: 5;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  transition-property: background-color, color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.btn-box:hover {
+  cursor: pointer;
+  color: #111;
+  background-color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.btn-wrap a {
+  font-size: 18px;
+}
+
 /* work-card  */
 .cards {
+
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 1em;
+  margin-top: 5rem;
 }
 
 .card-title {
@@ -139,13 +206,48 @@
 }
 
 .card-item {
+  position: relative;
   width: 300px;
   margin: 10px;
 }
 
-.card-item img {
+.card-item>img {
   width: 300px;
   height: auto;
+}
+
+.card-item .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 200px;
+  background: rgba(36, 36, 36, 0.6);
+  color: #ffffff;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.mask>a {
+  font-size: 22px;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2.5px 15px 2.5px 15px;
+  text-decoration: none;
+}
+
+.card-item .mask:hover {
+  cursor: pointer;
+  transform: all 0.5s;
+  opacity: 1;
+  
 }
 
 .card-box {
@@ -162,6 +264,12 @@
   margin-top: 1rem;
 }
 
+.box-title:hover {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: normal;
+}
+
 .works-tag {
   width: 300px;
   font-size: 13px;
@@ -169,35 +277,8 @@
   margin-top: 5px;
 }
 
-
-
-/* 卡片 */
-/* .main-card {
-  padding: 0 2em;
-}
-
-.card:hover {
-  cursor: pointer;
-  border-radius: 0.45rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.125);
-} */
-
-/* news */
-.news-content {
-  margin-top: 1.25rem;
-
-}
-
-.news-content .row {
-  margin: 0 auto;
-
-}
-
-.news-content hr {
-  border: 0;
-  color: #333;
-  background-color: #333;
-  height: 2px;
-  margin: 0;
-
+.card-item {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 1s ease 0s;
 }
