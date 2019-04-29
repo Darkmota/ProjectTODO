@@ -29,7 +29,7 @@ function changeLocale (newLocale) {
  */
 function init () {
   Global.locale = localStorage.getItem(Constants.localeLocalStorageKey) || Constants.locale[0]
-  $.getJSON(`./i18n/${Global.locale}.json`, (i18n) => Global.i18n = i18n)
+  $.getJSON(`./i18n/static/${Global.locale}.json`, (i18n) => Global.i18n = i18n)
 }
 
 init()
