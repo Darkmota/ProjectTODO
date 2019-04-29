@@ -11,7 +11,7 @@ let Global = {}
 
 /**
  * Change locale between Japanese, English and Chinese.
- * 'jp' || 'cn' || 'en'
+ * 'ja-JP' || 'en-US' || 'zh-CN'
  *
  * @param {string} newLocale new locale to change to
  */
@@ -19,7 +19,11 @@ function changeLocale (newLocale) {
   if (Constants.locale.indexOf(newLocale) !== -1) {
     if (Global.locale !== newLocale) {
       localStorage.setItem(Constants.localeLocalStorageKey, newLocale)
+    } else {
+      console.log(`New locale(${newLocale}) is same with thie old one.`)
     }
+  } else {
+    console.error(`Locale(${newLocale}) is not defined.`)
   }
 }
 
