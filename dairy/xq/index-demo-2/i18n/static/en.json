@@ -1,0 +1,38 @@
+{
+  "header": {
+    "homepage": "Home",
+    "information": {
+      "name": "Information",
+      "company_profile": "Company Profile",
+      "business_philosophy": {
+        "name": "Business Philosophy",
+        "representative’s_greetings": "Representative’s Greetings",
+        "privacy_policy": "Privacy Policy"
+      },
+      "organizational_chart": "Organizational Chart",
+      "access": "Access"
+    },
+    "business_field": {
+      "name": "Business Field",
+      "business_summary": {
+        "name": "Business Summary",
+        "quality_control": "Quality Control",
+        "project_management": "Project Management",
+        "development_language_and_environment": "Development Language and Environment"
+      },
+      "foreign_temporary_staffing_business": "Foreign Temporary Staffing Business",
+      "commission_proposal": "Commission Proposal",
+      "other_business": "Other Business",
+      "development_performance": "Development Performance"
+    },
+    "company_culture": "Company Culture",
+    "welfare": {
+      "name": "Welfare",
+      "leisure_and_entertainment": "Leisure and Entertainment",
+      "medical_insurance": "Medical Insurance"
+    },
+    "recruitment_information": "Recruitment Information",
+    "contact_us": "Contact us",
+    "search": "Search"
+  }
+}
