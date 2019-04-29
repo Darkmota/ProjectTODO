@@ -75,7 +75,7 @@ service nginx restart
 - [x] 修改nginx取消网站缓存任何资源，预防网页缓存产生的测试问题
 - [x] 修改ProjectTODO的结构，整合三个人之前的md变成新的todo.md，移除老md
 
-### 谢强、徐鑫雨
+### 谢强
 - [x] 优化桌面端header的样式
 - [x] 优化carousel的样式
 - [x] 添加about us
@@ -88,5 +88,11 @@ service nginx restart
 - [ ] 商讨静态数据/数据库可修改数据/废弃的数据的内容
 
 ### 谢强
+- [x] 添加section分界栏
+- [x] 目标区域添加蒙版
+- [x] 添加页面移动动画
+- [ ] 首页serve区域
+- [ ] 首页文化(blog)区域
+- [ ] 首页team区域 
 
 ### 徐鑫雨
