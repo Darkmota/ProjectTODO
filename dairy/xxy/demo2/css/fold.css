@@ -1,0 +1,28 @@
+@media screen and (min-width:1200px){
+    .left-fold,.second-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) and (min-width:768px){
+    .left-fold{
+        display: flex;
+    }
+    .img-fold{
+        width: 32.5px;
+        height: auto;
+        cursor: pointer;
+    }
+    .second-menu{
+        width: 80%;
+        height: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: -80%;
+        z-index: 9;
+    }
+    .second-menu-item{
+        margin: 22.5px ;
+    }
+}
