@@ -91,10 +91,11 @@ service nginx restart
 - [x] 添加section分界栏
 - [x] 目标区域添加蒙版
 - [x] 添加页面移动动画
-- [ ] 首页serve区域
+- [x] 首页serve区域
 - [ ] 首页文化(blog)区域
 - [ ] 首页team区域 
-- [ ] 首页footer区域
+- [x] 首页footer区域
+- [ ] map
 
 ### 徐鑫雨
 - [ ] 设置网页断点
