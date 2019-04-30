@@ -1,0 +1,59 @@
+.bg-dark-blue {
+  background-color: #003149;
+}
+
+.footer .c-white {
+  color: #fff;
+}
+
+.x {
+  width: 100%;
+}
+
+.rel {
+  position: relative;
+}
+
+.mxa {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.outer {
+  padding: 0 40px;
+}
+
+.footer__wrapper {
+  display: flex;
+}
+
+.footer__links {
+  margin: 0px;
+  padding: 0;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.footer__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__links>li {
+  float: left;
+  margin-bottom: 30px;
+  margin-right: 7%;
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__newsletter {
+  justify-content: flex-end;
+  margin: 0;
+  max-width: 280px;
+  order: 1;
+  /* 移动端要order:-1 使得此元素在首位 */
+}

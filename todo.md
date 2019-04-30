@@ -94,5 +94,5 @@ service nginx restart
 - [ ] 首页serve区域
 - [ ] 首页文化(blog)区域
 - [ ] 首页team区域 
-
+- [ ] 首页footer区域 
 ### 徐鑫雨
