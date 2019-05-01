@@ -7,6 +7,9 @@ body {
   font-size: 16px;
 }
 
+.z100 {
+  z-index: 5;
+}
 
 .caps {
   /* 大写字母 */
@@ -25,10 +28,12 @@ body {
   background-color: #012334;
 }
 
-.jcb {
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
+.c-dark {
+  color: #003149;
+}
+
+.f {
+  display: flex;
 }
 
 .fc {
@@ -41,9 +46,12 @@ body {
   flex-wrap: wrap;
 }
 
-.f {
-  display: flex;
+.jcb {
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
 }
+
 
 .aic {
   -ms-flex-align: center;
@@ -78,6 +86,7 @@ body {
   line-height: 1.6;
   font-size: 0.88rem;
 }
+
 .clear-a {
   text-decoration: none;
 }
@@ -86,6 +95,20 @@ body {
   text-decoration: none;
 }
 
+.part-title {
+  text-align: center;
+  display: block;
+}
+
+/* 区域title */
+.part-title hr {
+  margin-top: 2rem;
+  background-color: #264989;
+  height: 3px;
+  width: 5.56%;
+}
+
+/* 深色主题按钮 */
 .btn-dark-blue {
   padding: 0.5rem 1rem;
   border: 2px solid #264989c7;
@@ -95,7 +118,7 @@ body {
   font-size: 22px;
   transition-property: background-color, color;
   transition-duration: 0.5s;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
   margin-top: 2rem;
 }
 
@@ -105,7 +128,7 @@ body {
   background-color: #264989;
   transition-property: background-color, color;
   transition-duration: 0.5s;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
 }
 
 /* mask */
@@ -179,4 +202,3 @@ body {
   transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
 }
-

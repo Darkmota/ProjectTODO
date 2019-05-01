@@ -95,9 +95,16 @@ service nginx restart
 - [ ] 首页文化(blog)区域
 - [ ] 首页team区域 
 - [x] 首页footer区域
-- [ ] map
+- [x] map
+- [x] header优化
 
 ### 徐鑫雨
 - [ ] 设置网页断点
 - [ ] 设计手机端、平板端样式
 - [ ] 调整移动端的布局
+
+## 2019-4-30
+### 谢强
+- [ ] 首页布局
+- [ ] 首页文化(news/blog)区域
+- [x] header优化,造作事件

@@ -123,13 +123,14 @@
 .btn-box {
   z-index: 5;
   color: #fff;
+  font-weight: 500;
   border: 1px solid white;
   border-radius: 5px;
   text-align: center;
   padding: 10px;
   transition-property: background-color, color;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
 }
 
 .btn-box:hover {
@@ -137,8 +138,8 @@
   color: #111;
   background-color: #fff;
   transition-property: background-color, color;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
 }
 
 .btn-wrap a {
@@ -153,18 +154,6 @@
   flex-direction: column;
   margin-top: 5rem;
   margin-bottom: 5rem;
-}
-
-.card-title {
-  text-align: center;
-  display: block;
-}
-
-.card-title hr {
-  margin-top: 2rem;
-  background-color: #264989;
-  height: 3px;
-  width: 5.56%;
 }
 
 /* serve-cards */
@@ -198,9 +187,11 @@
   transform: scale(1.2);
   transition: all 1s ease 0s;
 }
+
 .item-text a {
   color: #111;
 }
+
 .item-text h3 {
   color: #111;
   margin-top: 1rem;
@@ -253,9 +244,10 @@
 }
 
 .card-item .item-img {
-  position: relative;  
+  position: relative;
   /* width: 300px; */
 }
+
 .card-item .item-img img {
   width: 300px;
   height: auto;
@@ -335,4 +327,84 @@
   opacity: 1;
   transform: translateY(0px);
   transition: all 1s ease 0s;
+}
+
+/* contact-section  */
+.contact {
+  background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
+  /* background-size: 100% ; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  overflow: hidden;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.contact::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: black;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact .line {
+  width: 100%;
+
+}
+
+.line-inner {
+  width: 70%;
+}
+
+.line-txt {
+  width: 50%;
+  padding: 2%;
+
+}
+
+.txt-item {
+  height: 270px;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.txt-item p {
+  font-size: 14px;
+  padding: 20px 50px 20px 50px;
+}
+
+.txt-item a {
+  color: #333;
+}
+
+.news {
+  width: 100%;
+}
+
+.news-inner {
+  width: 60%;
+  height: 450px;
+  border: 1px dotted #111;
+}
+
+.new-box {
+  /* news 标签 */
+  width: 100px;
+  height: 20px;
+  content: 'RELEASE';
+  display: inline-block;
+  padding: 0.1em 0.5em 0;
+  background: #2d31ac;
+  color: white;
+  font-weight: 400;
+  font-size: 0.86em;
+  letter-spacing: 0.5px;
 }
