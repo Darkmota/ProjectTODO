@@ -376,6 +376,10 @@
   padding: 40px;
 }
 
+.txt-item h4 {
+  text-decoration: underline;
+}
+
 .txt-item p {
   font-size: 14px;
   padding: 20px 50px 20px 50px;
@@ -385,26 +389,131 @@
   color: #333;
 }
 
-.news {
+.news-main {
   width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: rgba(245, 245, 245, 0.541);
 }
 
 .news-inner {
   width: 60%;
-  height: 450px;
-  border: 1px dotted #111;
+  border-radius: 0.45rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
+  padding: 4rem 7.5%;
+  background-color: #fff;
 }
 
-.new-box {
+.news-content {
+  width: 100%;
+
+}
+
+.news-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list p {
+  margin: 0;
+ 
+}
+
+.topics-content a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  text-decoration: underline;
+}
+.topics-content a:hover {
+  color: #333;
+  text-decoration: none;
+  opacity: 0.75;
+  transition-duration: .25s;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity, text-decoration;
+}
+.topics-tag {
   /* news 标签 */
-  width: 100px;
-  height: 20px;
-  content: 'RELEASE';
+  /* height: 20px; */
   display: inline-block;
   padding: 0.1em 0.5em 0;
-  background: #2d31ac;
+  background: #ac7125;
   color: white;
+  text-align: center;
   font-weight: 400;
   font-size: 0.86em;
   letter-spacing: 0.5px;
+  border-radius: 5px;
+}
+
+/* team-cards */
+.team-inner {
+  width: 80%;
+  margin-bottom: 2.5rem;
+}
+
+.team-item {
+  width: 33.3%;
+  padding: 15px;
+}
+
+.team-item .item-content {
+  overflow: hidden;
+  text-align: center;
+  min-height: 400px;
+  max-height: 400px;
+
+}
+
+.team-item-content img {
+  width: 100%;
+  height: auto;
+}
+
+.team-item-content img:hover {
+  width: 100%;
+  cursor: pointer;
+
+}
+
+.team-item-content .item-text {
+  text-align: center;
+}
+
+.team-item-content .item-text a {
+  color: #111;
+
+}
+
+.team-item-content .item-text h3 {
+  color: #111;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  opacity: 1;
+  transition-duration: .5s;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity, text-decoration;
+}
+
+.team-item-content .item-text h3:hover {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 400;
+  opacity: 0.65;
+  transition-duration: .5s;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity, text-decoration;
+}
+
+.team-item-content .item-text p {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
