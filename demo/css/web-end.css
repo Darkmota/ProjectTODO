@@ -226,6 +226,8 @@
     color: #fff;
   }
 
+
+  /* footer 2 */
   .colophon__wrapper {
     width: 95%;
     margin: 0;
@@ -254,20 +256,20 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
     order: -1;
     width: 450px;
     text-align: center;
     color: #fff;
-
   }
 
   .colophon__links li {
     border-right: 1px solid hsla(0, 0%, 100%, .5);
     height: 14px;
     line-height: 1;
-    padding: .1rem .8rem;
     width: auto;
+    padding: 0 15px;
   }
 
   .colophon__links :last-child {
@@ -512,6 +514,85 @@
     font-size: 1em;
     color: #fff;
   }
+
+  /* footer 2 */
+  .colophon__wrapper {
+    width: 95%;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+  }
+
+  .colophon__wrapper a {
+    text-decoration: none;
+    color: #fff
+  }
+
+  .colophon__social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: end;
+    margin-bottom: 0;
+    max-width: 150px;
+    transform: translateX(.6rem);
+    color: #fff;
+  }
+
+  .colophon__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    order: -1;
+    width: 450px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .colophon__links li {
+    border-right: 1px solid hsla(0, 0%, 100%, .5);
+    height: 14px;
+    line-height: 1;
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .colophon__links :last-child {
+    border-right: none;
+  }
+
+  .colophon__social l1 {
+    margin-right: 5px;
+  }
+
+  .colophon__social i {
+    margin-top: 5px;
+    font-size: 24px;
+    padding: .1rem .5rem;
+  }
+
+  .colophon__wrapper {
+    font-size: 14px;
+    color: #fff;
+
+  }
+
+  .fade-out {
+    opacity: 0.5;
+    transition-duration: .6s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+  }
+
+  .fade-out:hover {
+    opacity: 1;
+    transition-duration: .6s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+  }
 }
 
 @media screen and (max-width:760px) {
@@ -692,7 +773,6 @@
     order: 1;
     padding-right: 25px;
     margin-right: 25px;
-
     /* 移动端要order:-1 使得此元素在首位 */
   }
 
@@ -739,84 +819,74 @@
     color: #fff;
   }
 
-}
+  /* footer 2 */
+  .colophon__wrapper {
+    width: 95%;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: block;
+  }
 
+  .colophon__wrapper a {
+    text-decoration: none;
+    color: #fff
+  }
 
+  .colophon__links {
+    
+    padding: 0;
+    list-style: none;
+    display: block;
+    order: -1;
+    width: 450px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+  }
 
-.colophon__wrapper {
-  width: 95%;
-  margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  .colophon__social {
 
-}
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 150px;
+    color: #fff;
+  }
 
-.colophon__wrapper a {
-  text-decoration: none;
-  color: #fff
-}
+  .colophon__links li {
+    display: block;
+  }
 
-.colophon__social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  justify-content: end;
-  margin-bottom: 0;
-  max-width: 150px;
-  transform: translateX(.6rem);
-  color: #fff;
-}
+  .colophon__social l1 {
+    margin-right: 5px;
+  }
 
-.colophon__links {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  order: -1;
-  width: 450px;
-  text-align: center;
-  color: #fff;
-}
+  .colophon__social i {
+    margin-top: 5px;
+    font-size: 24px;
+    padding: .1rem .5rem;
+  }
 
-.colophon__links li {
-  border-right: 1px solid hsla(0, 0%, 100%, .5);
-  height: 14px;
-  line-height: 1;
-  width: auto;
-  padding: 15px;
-}
+  .colophon__wrapper {
+    font-size: 14px;
+    color: #fff;
 
-.colophon__links :last-child {
-  border-right: none;
-}
+  }
 
-.colophon__social l1 {
-  margin-right: 5px;
-}
+  .fade-out {
+    opacity: 0.5;
+    transition-duration: .6s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+  }
 
-.colophon__social i {
-  margin-top: 5px;
-  font-size: 24px;
-  padding: .1rem .5rem;
-}
-
-.colophon__wrapper {
-  font-size: 14px;
-  color: #fff;
-
-}
-
-.fade-out {
-  opacity: 0.5;
-  transition-duration: .6s;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
-}
-
-.fade-out:hover {
-  opacity: 1;
-  transition-duration: .6s;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
+  .fade-out:hover {
+    opacity: 1;
+    transition-duration: .6s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+  }
 }
