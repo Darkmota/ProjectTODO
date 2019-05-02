@@ -28,12 +28,40 @@ function changeLocale (newLocale) {
 }
 
 /**
+ * Render i18n
+ *
+ */
+function renderI18n () {
+  $.i18n.properties({  
+      name: 'strings',    //属性文件名     命名格式： 文件名_国家代号.properties
+      path: 'https://bizplus.dynami.tech/demo/i18n/static/',   //注意这里路径是你属性文件的所在文件夹
+      mode: 'map',  
+      language: Global.locale,     //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
+      callback: function () {  
+        $("[i]").each(function () {  
+          console.log($(this).data("locale"))
+          $(this).html($.i18n.prop($(this).data("locale")))
+        })
+      }  
+  });  
+  /*
+  $('.menu-item')[0].innerText = Global.i18n.header.homepage
+  $('.menu-item')[1].innerText = Global.i18n.header.information.name
+  $('.menu-item').children()[0].innerText = Global.i18n.header.information.company_profile
+  $('.menu-item').children()[1].innerText = Global.i18n.header.information.business_philosophy
+  */
+}
+
+/**
  * Initialize function which called first.
  *
  */
 function init () {
   Global.locale = localStorage.getItem(Constants.localeLocalStorageKey) || Constants.locale[0]
-  $.getJSON(`https://bizplus.dynami.tech/demo/i18n/static/${Global.locale}.json`, (i18n) => Global.i18n = i18n)
+  $.getJSON(`https://bizplus.dynami.tech/demo/i18n/static/${Global.locale}.json`, (i18n) => {
+    Global.i18n = i18n
+    renderI18n()
+  })
 }
 
 init()
