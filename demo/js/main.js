@@ -6,7 +6,7 @@
 const Constants = {
   locale: ['ja_JP', 'en_US', 'zh_CN'],
   localeLocalStorageKey: 'bizplus-locale',
-  localSelector: 'h1, h2, h3, h4, h5, h6, div, span, p, b, a'
+  localSelector: 'h1, h2, h3, h4, h5, h6, div, span, p, b, a, button'
 }
 let Global = {}
 
