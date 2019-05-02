@@ -275,18 +275,6 @@
   transition: all .6s 0s cubic-bezier(.165, .84, .44, 1);
 }
 
-@keyframes myMove {
-  0% {}
-
-  100% {
-    margin-right: 5%
-  }
-}
-
-.expand>ul>li:hover>.menu-item>ul>li>i {
-  /* animation: myMove 1s linear infinite alternate; */
-}
-
 .expand>ul>li:hover {
   color: #fff;
   background-color: #264989;
