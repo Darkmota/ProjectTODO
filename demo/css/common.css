@@ -110,6 +110,7 @@ body {
 
 /* 深色主题按钮 */
 .btn-dark-blue {
+  color: #333;
   padding: 0.5rem 1rem;
   border: 2px solid #264989c7;
   border-radius: 0.5rem;

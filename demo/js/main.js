@@ -38,3 +38,25 @@ function init () {
 
 init()
 
+// 点击搜索
+$('.search-click').click(function() { 
+  let clicks = $(this).data('clicks');
+  let search_on = $('.search-click .search-on');
+  let search_off = $('.search-click .search-off')
+  if (clicks) {
+     // odd clicks
+      $('.search-input').css("display","none")
+      console.log("close_search")  
+      search_on.css("display","block")
+      search_off.css("display","none")
+  } else {
+     // even clicks
+      $('.search-input').css("display","flex");
+      console.log("open_search")
+      search_on.css("display","none")
+      search_off.css("display","block")    
+  }
+  $(this).data("clicks", !clicks);
+});
+
+

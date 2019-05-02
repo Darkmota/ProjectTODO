@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <!-- header justify-content-md-center -->
+  <!-- header center -->
   <div class="g-navbar">
     <div class="nav">
       <div class="nav-logo ">
@@ -42,10 +42,10 @@
             </span>
             <div class="menu-information"></div>
             <ul>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Management philosophy</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Representative’s greetings</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Organization chart</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Security policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Management philosophy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Representative’s greetings</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Organization chart</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Security policy</a></li>
             </ul>
           </div>
           <div class="menu-item caps expand">
@@ -53,10 +53,10 @@
               Profile&nbsp;<i class="fas fa-angle-down svg-down"></i>
             </span>
             <ul>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Profile philosophy</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Profile greetings</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Profile chart</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Profile policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Profile philosophy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Profile greetings</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Profile chart</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Profile policy</a></li>
             </ul>
           </div>
           <div class="menu-item caps expand">
@@ -64,10 +64,10 @@
               Benefit&nbsp;<i class="fas fa-angle-down svg-down"></i>
             </span>
             <ul>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Benefit philosophy</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Benefit greetings</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Benefit chart</a></li>
-              <li><i class="fas fa-arrow-right"></i><a href="#">Benefit policy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Benefit philosophy</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Benefit greetings</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Benefit chart</a></li>
+              <li><a href="#"><i class="fas fa-arrow-right"></i>Benefit policy</a></li>
             </ul>
           </div>
           <div class="menu-item caps">Recruitment</div>
@@ -75,19 +75,31 @@
 
         </div>
       </div>
-      <div class="nav-right ">
+      <div class="nav-right">
         <div class="nav-search" style="margin-right: 15px;">
-          <i class="fas fa-search"></i>
+          <div class="search-click">
+            <i class="fas fa-search search-on"></i>
+            <i class="fas fa-times search-off"></i>
+          </div>
+        </div>
+        <div class="search-input">
+          <input type="text" placeholder="input here">
+          <div class=""><button id="btn-search"><i class="fas fa-search"></i></button></div>
         </div>
         <div class="nav-lan ">
           <span>
             English&nbsp;<i class="fas fa-angle-down svg-down"></i>
           </span>
+          <ul class="lan-select">
+            <li><a href="#">日本語</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">中文</a></li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-
+  <!-- header center -->
   <!-- main-content -->
   <div class="main-content">
     <!-- carousel -->
@@ -129,6 +141,7 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    <!-- carousal -->
     <!-- about us -->
     <div class="about-us">
       <div class="about-inner">
@@ -155,9 +168,9 @@
         <button class="btn-dark-blue caps">LEARN MORe</button>
       </div>
     </div>
-
-    <!-- section -->
-    <section id="index--recruit--btm">
+    <!-- about us -->
+    <!-- section 过渡 -->
+    <div id="index--recruit--btm">
       <div class="bg">
         <div class="content-inner-y">
           <div class="container color-white">
@@ -175,10 +188,9 @@
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
+    <!-- section 过渡 -->
     <!-- serve -->
-    <!-- Work -->
     <div class="cards">
       <div class="part-title">
         <h1 class="caps">our services</h1>
@@ -187,12 +199,12 @@
       </div>
       <div class="serve fc">
         <div class="serve-inner f">
-          <div class="serve-item ">
+          <div class="serve-item">
             <div class="item-content">
               <div class="ofh">
                 <img src="./imgs/business/business-office-building-1080x720.jpg" alt="">
               </div>
-              <div class="item-text">
+              <div class="item-txt">
                 <h3 class="caps"><a href="#" class="clear-a">voluptas</a></h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga cum asperiores commodi recusandae
                   inventore in nesciunt, rerum odit est voluptatum molestiae officiis magnam deleniti ut esse. Nobis
@@ -206,7 +218,7 @@
             <div class="item-content">
               <div class="ofh"><img src="./imgs//business/team-leader-writing-on-white-board-1080x720.jpg" alt="">
               </div>
-              <div class="item-text">
+              <div class="item-txt">
                 <h3 class="caps"><a href="#" class="clear-a">voluptas</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat doloribus, porro nihil
                   eveniet tem!</p>
@@ -217,7 +229,7 @@
             <div class="item-content">
               <div class="ofh"><img src="./imgs//business/credit-card-terminal-1080x720.jpg" alt="">
               </div>
-              <div class="item-text">
+              <div class="item-txt">
                 <h3 class="caps"><a href="#" class="clear-a">voluptas</a></h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur fugiat doloribus, porro nihil
                   eveniet tem!</p>
@@ -230,6 +242,7 @@
         <div><button class="btn-dark-blue caps">learn more</button></div>
       </div>
     </div>
+    <!-- serve -->
     <!-- Work -->
     <div class="cards">
       <div class="part-title">
@@ -237,9 +250,9 @@
         <i>新着制作実績</i>
         <hr>
       </div>
-      <div class="card-inner">
-        <div class="card-list">
-          <div class="card-item">
+      <div class="work-inner">
+        <div class="work-list">
+          <div class="work-item">
             <div class="item-img">
               <img
                 src="./imgs/business/business-copywriter-typing-on-his-modern-laptop_free_stock_photos_picjumbo_DSC06843_free_stock_photos_picjumbo_com-1080x720.jpg"
@@ -248,67 +261,67 @@
                 <a href="#" class="btn-mask">MORE</a>
               </div>
             </div>
-            <div class="card-box">
+            <div class="work-box">
               <div class="box-title">由布院つばめ舎（湯布院）</div>
               <span class="works-tag">Web広告施策</span>
             </div>
           </div>
-          <div class="card-item">
+          <div class="work-item">
             <div class="item-img ">
               <img src="./imgs/business/business-woman-working-on-laptop-in-her-office-1080x720.jpg" alt="2">
               <div class="mask">
                 <a href="#" class="btn-mask">MORE</a>
               </div>
             </div>
-            <div class="card-box">
+            <div class="work-box">
               <div class="box-title">由布院つばめ舎（湯布院）</div>
               <span class="works-tag">Web広告施策</span>
             </div>
           </div>
-          <div class="card-item">
+          <div class="work-item">
             <div class="item-img">
               <img src="./imgs/business/coffee-laptop-business-work-still-life-1080x720.jpg" alt="3">
               <div class="mask">
                 <a href="#" class="btn-mask">MORE</a>
               </div>
             </div>
-            <div class="card-box">
+            <div class="work-box">
               <div class="box-title">由布院つばめ舎（湯布院）</div>
               <span class="works-tag">Web広告施策是是是是是是所所所所所所所所搜索 搜索 </span>
             </div>
           </div>
-          <div class="card-item">
+          <div class="work-item">
             <div class="item-img">
               <img src="./imgs/business/team-leader-writing-on-white-board-1080x720.jpg" alt="4">
-              <div class="mask-light">
+              <div class="mask">
                 <a href="#" class="btn-mask">MORE</a>
               </div>
             </div>
-            <div class="card-box">
+            <div class="work-box">
               <div class="box-title">由布院つばめ舎（湯布院）</div>
               <span class="works-tag">Web広告施策</span>
             </div>
           </div>
-          <div class="card-item">
+          <div class="work-item">
             <div class="item-img">
               <img src="./imgs/business/business-free-stock-photo-1080x720.jpg" alt="5">
-              <div class="mask-light">
+              <div class="mask">
                 <a href="#" class="btn-mask">MORE</a>
               </div>
             </div>
-            <div class="card-box">
+            <div class="work-box">
               <div class="box-title">由布院つばめ舎（湯布院）</div>
               <span class="works-tag">Web広告施策</span>
             </div>
           </div>
-          <div class="card-item">
+          <div class="work-item">
             <div class="item-img">
               <img src="./imgs/business/business-agency-team-working-on-new-ideas-1080x720.jpg" alt="6">
-              <div class="mask-light">
+              <div class="mask">
                 <a href="#" class="btn-mask">MORE</a>
               </div>
             </div>
-            <div class="card-box">
+            <div class="work-box">
               <div class="box-title">由布院つばめ舎（湯布院）</div>
               <span class="works-tag">Web広告施策</span>
             </div>
@@ -319,8 +332,9 @@
         <div><button class="btn-dark-blue caps">learn more</button></div>
       </div>
     </div>
-    <!-- section -->
-    <section class="contact ">
+    <!-- Work -->
+    <!-- contact -->
+    <div class="contact ">
       <div class="line fc z100">
         <div class="line-inner fc fw z100">
           <div class="line-txt txt-c">
@@ -336,18 +350,17 @@
               <h4 class="c-dark">お電話でのお問い合わせ</h4>
               <p>お急ぎの方や詳しく話を聞きたい方は
                 お電話ください。</p>
-              <a href="#" class="clear-a" style="font-size: 24px;">電話0120-800-804
+              <a href="#" class="clear-a" style="font-size: 24px;color: #333;">電話0120-800-804
               </a>
               <div style="font-size: 12px;">受付時間10:00〜18:00</div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
+    </div>
+    <!-- contact -->
     <!-- new -->
     <div class="news-main fc">
-
       <div class="news-inner">
         <div class="part-title">
           <h1 class="caps">our news</h1>
@@ -358,7 +371,8 @@
           <ul class="news-list">
             <li>
               <p class="topics-content"><a
-                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユUBS健保システムユUBS健保システムユーザ会全国ーザ会全国ーザ会全国総会開催のお知らせ</a></p>
+                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユUBS健保システムユUBS健保システムユーザ会全国ーザ会全国ーザ会全国総会開催のお知らせ</a>
+              </p>
               <div class="topics-date">
                 <span class="topics-tag"><span>セミナー</span></span><span class="topics-time">2019.04.25</span>
               </div>
@@ -372,28 +386,32 @@
             </li>
             <li>
               <p class="topics-content"><a
-                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーザ会UBS健保システムユーザ会全国全国総会開催のお知らせ</a></p>
+                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーザ会UBS健保システムユーザ会全国全国総会開催のお知らせ</a>
+              </p>
               <div class="topics-date">
                 <span class="topics-tag"><span>セミナー</span></span><span class="topics-time">2019.04.25</span>
               </div>
             </li>
             <li>
               <p class="topics-content"><a
-                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーザ会全国総会開催のお知UBS健保システムユーザ会全国らせ</a></p>
+                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーザ会全国総会開催のお知UBS健保システムユーザ会全国らせ</a>
+              </p>
               <div class="topics-date">
                 <span class="topics-tag"><span>セミナー</span></span><span class="topics-time">2019.04.25</span>
               </div>
             </li>
             <li>
               <p class="topics-content"><a
-                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーUBS健保システムユーザ会全国ザ会全国UBS健保システムユーザ会全国総会開催のお知らせ</a></p>
+                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーUBS健保システムユーザ会全国ザ会全国UBS健保システムユーザ会全国総会開催のお知らせ</a>
+              </p>
               <div class="topics-date">
                 <span class="topics-tag"><span>セミナー</span></span> <span class="topics-time">2019.04.25</span>
               </div>
             </li>
             <li>
               <p class="topics-content"><a
-                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーザUBS健保システムユーザ会全国会全国総会開催のお知らせ</a></p>
+                  href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html">UBS健保システムユーザUBS健保システムユーザ会全国会全国総会開催のお知らせ</a>
+              </p>
               <div class="topics-date">
                 <span class="topics-tag"><span>セミナー</span></span><span class="topics-time">2019.04.25</span>
               </div>
@@ -401,11 +419,85 @@
           </ul>
         </div>
         <div class="fc">
-            <div><button class="btn-dark-blue caps">learn more</button></div>
-          </div>
+          <div><button class="btn-dark-blue caps">learn more</button></div>
+        </div>
       </div>
     </div>
-    <!-- Work -->
+    <!-- new -->
+    <!-- event/blog 公司文化 -->
+    <div class="event">
+      <div class="part-title">
+        <h1 class="caps">our events / blog</h1>
+        <i>Something.</i>
+        <hr>
+      </div>
+      <ul class="event_ul">
+
+        <li>
+          <a href="#">
+            <p class="img">
+              <img width="476" height="320" src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px">
+            </p>
+            <div class="detail_area">
+              <p class="date">2019-04-10</p>
+              <h6 class="title">ゴールデンウィーク期間中の営業日のお知らせ</h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px"></p>
+            <div class="detail_area">
+              <p class="date">2019-02-02</p>
+              <h6 class="title">2019年2月3月のHP更新業務について</h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2018/06/abc-476x320.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""></p>
+            <div class="detail_area">
+              <p class="date">2018-12-15</p>
+              <h6 class="title">年末年始休業期間</h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px"></p>
+            <div class="detail_area">
+              <p class="date">2018-07-28</p>
+              <h6 class="title">スタッフ募集！！【キャリア採用】</h6>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+      <div class="fc">
+        <div><button class="btn-dark-blue caps">learn more</button></div>
+      </div>
+    </div>
+    <!-- event/blog 公司文化 -->
+    <!-- Team -->
     <div class="cards">
       <div class="part-title">
         <h1 class="caps">our team</h1>
@@ -416,8 +508,8 @@
         <div class="team-inner f">
           <div class="team-item ">
             <div class="team-item-content">
-              <div class="ofh">
-                <img src="./imgs/business/business-woman-working-on-laptop-in-her-office-1080x720.jpg" alt="">
+              <div class="item-img">
+                <img src="./imgs/business/coffee-laptop-business-work-still-life-1080x720.jpg" alt="">
                 <div class="mask-light">
                   <a href="#" class="btn-mask">MORE</a>
                 </div>
@@ -434,8 +526,10 @@
           </div>
           <div class="team-item ">
             <div class="team-item-content">
-              <div class="ofh">
-                <img src="./imgs/business/business-woman-working-on-laptop-in-her-office-1080x720.jpg" alt="">
+              <div class="item-img rel">
+                <img
+                  src="./imgs/business/sketching-startup-website-ideas-on-paper_free_stock_photos_picjumbo_HNCK4890-1080x720.jpg"
+                  alt="">
                 <div class="mask-light">
                   <a href="#" class="btn-mask">MORE</a>
                 </div>
@@ -451,8 +545,8 @@
           </div>
           <div class="team-item ">
             <div class="team-item-content">
-              <div class="ofh">
-                <img src="./imgs/business/business-woman-working-on-laptop-in-her-office-1080x720.jpg" alt="">
+              <div class="item-img">
+                <img src="./imgs/business//business-woman-working-on-laptop-in-her-office-1080x720.jpg" alt="">
                 <div class="mask-light">
                   <a href="#" class="btn-mask">MORE</a>
                 </div>
@@ -473,6 +567,7 @@
         <div><button class="btn-dark-blue caps">learn more</button></div>
       </div>
     </div>
+    <!-- Team -->
     <!-- web-end -->
     <div class="web-end">
       <!-- map -->
@@ -496,7 +591,6 @@
           </div>
         </div>
       </div>
-
       <!-- double footer -->
       <footer class="footer bg-dark-blue">
         <div class="rel outer mxa x">
@@ -607,21 +701,24 @@
         </div>
       </footer>
     </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script>
+    <!-- web-end -->
+  </div>
+  <!-- main-content -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script>
 
-    <!-- init -->
-    <script src="./js/main.js"></script>
-    <script src="./js/map.js"></script>
+  <!-- init -->
+  <script src="./js/main.js"></script>
+  <script src="./js/map.js"></script>
 </body>
 
 </html>

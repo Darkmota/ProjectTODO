@@ -93,7 +93,7 @@ service nginx restart
 - [x] 添加页面移动动画
 - [x] 首页serve区域
 - [ ] 首页文化(blog)区域
-- [ ] 首页team区域 
+
 - [x] 首页footer区域
 - [x] map
 - [x] header优化
@@ -103,8 +103,9 @@ service nginx restart
 - [x] 设计手机端、平板端样式
 - [ ] 调整移动端的布局
 
-## 2019-4-30
+## 2019-5-1
 ### 谢强
-- [ ] 首页布局
-- [ ] 首页文化(news/blog)区域
-- [x] header优化,造作事件
+- [x] 首页布局
+- [x] 首页文化(news/blog)区域
+- [x] header优化,添加事件
+- [x] 首页team区域 
