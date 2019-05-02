@@ -685,13 +685,11 @@
   }
 
   .content-text div {
-    width: 150px;
     margin-top: 2rem;
     text-align: center;
   }
 
   .content-text a {
-    width: 100%;
     z-index: 5;
     color: #fff;
     font-weight: 600;
