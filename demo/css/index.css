@@ -252,7 +252,7 @@
 /* work-cards */
 .work-inner {
   margin: 0 auto;
-  width: 61.8%;
+  width: 61.89%;
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -260,14 +260,16 @@
 
 .work-inner .work-list {
   width: 960px;
-  min-width: 960px;
+  /* min-width: 960px; */
   display: flex;
   flex-wrap: wrap;
 }
 
 .work-inner .work-list .work-item {
   width: 300px;
-  margin: 10px;
+  /* margin: 10px; */
+  padding: 10px;  
+ 
 }
 
 .work-list .work-item .item-img {
@@ -276,7 +278,7 @@
 }
 
 .work-list .work-item .item-img img {
-  width: 300px;
+  width: 280px;
   height: auto;
 }
 
@@ -384,7 +386,6 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: rgba(245, 245, 245, 0.541);
 }
 
 .news-inner {

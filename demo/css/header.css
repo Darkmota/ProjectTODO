@@ -55,6 +55,8 @@
   width: 15%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  position: relative;
 }
 
 .navbar {
@@ -94,12 +96,6 @@
   transform: rotate(180deg);
   transition-duration: 0.35s;
   transition-timing-function: ease-out;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .nav-lan {
