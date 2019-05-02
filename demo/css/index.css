@@ -10,6 +10,87 @@
     object-fit: cover;
     cursor: pointer;
   }
+
+  /* contact-section  */
+  .contact {
+    background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
+    /* background-size: 100% ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact .line {
+    width: 100%;
+
+  }
+
+  .contact .line .line-inner {
+    width: 70%;
+    float: left;
+  }
+
+  .contact .line .line-inner .line-txt {
+    width: 50%;
+    padding: 2%;
+
+  }
+
+  .line .line-inner .line-txt .txt-item {
+    height: 270px;
+    background-color: #fff;
+    padding: 40px;
+  }
+
+  .line .line-inner .line-txt .txt-item h4 {
+    text-decoration: underline;
+  }
+
+  .line .line-inner .line-txt .txt-item p {
+    font-size: 14px;
+    padding: 20px 50px 20px 50px;
+  }
+
+  .line .line-inner .line-txt .txt-item a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .line .line-inner .line-txt .txt-item a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.75;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+  }
+
+  .news-inner {
+    width: 60%;
+    border-radius: 0.45rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
+    padding: 4rem 7.5%;
+    background-color: #fff;
+  }
+
 }
 
 @media screen and (max-width:1200px) and (min-width:760px) {
@@ -23,6 +104,86 @@
     object-fit: cover;
     cursor: pointer;
   }
+
+  /* contact-section  */
+  .contact {
+    background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
+    /* background-size: 100% ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact .line {
+    width: 100%;
+
+  }
+
+  .contact .line .line-inner {
+    width: 70%;
+  }
+
+  .contact .line .line-inner .line-txt {
+    width: 50%;
+    padding: 2%;
+
+  }
+
+  .line .line-inner .line-txt .txt-item {
+    height: 270px;
+    background-color: #fff;
+    padding: 40px;
+  }
+
+  .line .line-inner .line-txt .txt-item h4 {
+    text-decoration: underline;
+  }
+
+  .line .line-inner .line-txt .txt-item p {
+    font-size: 10px;
+    padding: 2px 5px 2px 5px;
+  }
+
+  .line .line-inner .line-txt .txt-item a {
+    font-size: 15px;
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .line .line-inner .line-txt .txt-item a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.75;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+  }
+
+  .news-inner {
+    width: 80%;
+    border-radius: 0.45rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
+    padding: 4rem 7.5%;
+    background-color: #fff;
+  }
+
 }
 
 @media screen and (max-width:760px) {
@@ -35,6 +196,84 @@
     height: calc(100vh - 60px);
     object-fit: cover;
     cursor: pointer;
+  }
+
+  /* contact-section  */
+  .contact {
+    background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
+    /* background-size: 100% ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact .line {
+    width: 100%;
+
+  }
+
+  .contact .line .line-inner {
+    width: 90%;
+  }
+
+  .contact .line .line-inner .line-txt {
+    width: 90%;
+    padding: 2%;
+
+  }
+
+  .line .line-inner .line-txt .txt-item {
+    height: 270px;
+    background-color: #fff;
+    padding: 40px;
+  }
+
+  .line .line-inner .line-txt .txt-item h4 {
+    text-decoration: underline;
+  }
+
+  .line .line-inner .line-txt .txt-item p {
+    font-size: 11px;
+    padding: 2px 5px 2px 5px;
+  }
+
+  .line .line-inner .line-txt .txt-item a {
+    font-size: 14px;
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .line .line-inner .line-txt .txt-item a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.75;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+  }
+
+  .news-inner {
+    width: 90%;
+    border-radius: 0.45rem;
+    padding: 4rem 7.5%;
+    background-color: #fff;
   }
 }
 
@@ -339,77 +578,6 @@
   color: #fff;
 }
 
-/* contact-section  */
-.contact {
-  background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
-  /* background-size: 100% ; */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  overflow: hidden;
-  padding: 40px;
-  text-align: center;
-  position: relative;
-}
-
-.contact::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background-color: black;
-  opacity: 0.5;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.contact .line {
-  width: 100%;
-
-}
-
-.contact .line .line-inner {
-  width: 70%;
-}
-
-.contact .line .line-inner .line-txt {
-  width: 50%;
-  padding: 2%;
-
-}
-
-.line .line-inner .line-txt .txt-item {
-  height: 270px;
-  background-color: #fff;
-  padding: 40px;
-}
-
-.line .line-inner .line-txt .txt-item h4 {
-  text-decoration: underline;
-}
-
-.line .line-inner .line-txt .txt-item p {
-  font-size: 14px;
-  padding: 20px 50px 20px 50px;
-}
-
-.line .line-inner .line-txt .txt-item a {
-  font-size: 24px;
-  color: #333;
-  text-decoration: underline;
-}
-
-.line .line-inner .line-txt .txt-item a:hover {
-  cursor: pointer;
-  text-decoration: none;
-  opacity: 0.75;
-  transition-duration: 0.25s;
-  transition-property: opacity;
-  transition-timing-function: ease-in-out;
-}
-
 /* .line .line-inner .line-txt:nth-child(1) a {
   color: #333;
   padding: 0.5rem 1rem;
@@ -438,14 +606,6 @@
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.news-inner {
-  width: 60%;
-  border-radius: 0.45rem;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
-  padding: 4rem 7.5%;
-  background-color: #fff;
 }
 
 .news-content {
