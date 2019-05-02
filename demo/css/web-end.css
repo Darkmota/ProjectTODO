@@ -413,39 +413,48 @@
   .footer .c-white {
     color: #fff;
   }
-
-  .footer__wrapper {
-    display: flex;
-    padding-top: 50px;
-  }
-
-  .footer__links {
-    margin: 0px;
-    padding: 0;
-    justify-content: flex-start;
+  .footer-inner {
     width: 100%;
+  }.footer-inner h1{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .footer__wrapper {
+    display: block;
+    padding-top: 50px;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .footer__links ul {
+
+  .footer__links {
+    width: 100%;
     list-style: none;
-    margin: 0;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__links li {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 5px;
+  }
+
+  .footer__sublinks {
+    list-style: none;
     padding: 0;
   }
 
-  .footer__links>li {
-    float: left;
-    margin-bottom: 30px;
-    margin-right: 7%;
-  }
-
-  .footer__links {
-    list-style: none;
+  .footer__sublinks li {
+    width: 100%;
+    margin: 0;
   }
 
   .footer__newsletter {
-    justify-content: flex-end;
+    display: block;
     margin: 0;
-    max-width: 280px;
     order: 1;
     /* 移动端要order:-1 使得此元素在首位 */
   }
@@ -494,8 +503,13 @@
     width: 100%;
   }
 
+  .newsletter {
+    position: relative;
+  }
+
   .newsletter button {
     outline: none;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
@@ -667,7 +681,9 @@
   }
 
   .content-text div {
+    width: 150px;
     margin-top: 2rem;
+    text-align: center;
   }
 
   .content-text a {
@@ -694,6 +710,8 @@
   }
 
   /* map */
+
+
   .footer {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -707,31 +725,41 @@
     padding-top: 50px;
   }
 
-  .footer__links {
+  /* .footer__links {
     margin: 0px;
     padding: 0;
     width: 100%;
-  }
-
-  .footer__links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .footer__links>li {
-    margin-bottom: 30px;
-    margin-right: 7%;
-  }
+  } */
 
   .footer__links {
     list-style: none;
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__links li {
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 5px;
+  }
+
+  .footer__sublinks {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer__sublinks li {
+    width: 100%;
+    margin: 0;
   }
 
   .footer__newsletter {
-    margin: 0;
-    max-width: 280px;
+    margin: 0 auto;
+    width: 80%;
     order: 1;
+    padding: 0;
     /* 移动端要order:-1 使得此元素在首位 */
   }
 
@@ -766,19 +794,10 @@
     margin-bottom: 1em;
   }
 
-  .footer__newsletter {
-    justify-content: flex-end;
-    margin: 0;
-    max-width: 300px;
-    order: 1;
-    padding-right: 25px;
-    margin-right: 25px;
-    /* 移动端要order:-1 使得此元素在首位 */
-  }
-
   .footer-from {
-    max-width: 300px;
+    width: 100%;
     overflow: hidden;
+    margin: 50px auto;
   }
 
   .newsletter.is-light input {
@@ -789,7 +808,7 @@
     /* background-color: #003149; */
     padding: 1.6em 1.4em 1.7em;
     /* width: 80%; */
-    width: 90%;
+    width:100%;
 
   }
 
@@ -834,30 +853,29 @@
   }
 
   .colophon__links {
-    
     padding: 0;
     list-style: none;
     display: block;
-    order: -1;
-    width: 450px;
+    /* order: -1; */
     text-align: center;
     color: #fff;
     margin-bottom: 1rem;
     margin: 0 auto;
   }
 
-  .colophon__social {
+  .colophon__links li {
+    /* display: block; */
+    width: 150px;
+    margin: 0 auto;
+  }
 
+  .colophon__social {
     padding: 0;
     list-style: none;
     margin: 0 auto;
     margin-bottom: 0;
     max-width: 150px;
     color: #fff;
-  }
-
-  .colophon__links li {
-    display: block;
   }
 
   .colophon__social l1 {
