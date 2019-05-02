@@ -136,7 +136,7 @@ body {
     border-radius: 0.5rem;
     background-color: #fff;
     outline: none;
-    font-size: 12px;
+    font-size: 22px;
     transition-property: background-color, color;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -155,7 +155,7 @@ body {
     border-radius: 0.5rem;
     background-color: #fff;
     outline: none;
-    font-size: 10px;
+    font-size: 22px;
     transition-property: background-color, color;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;

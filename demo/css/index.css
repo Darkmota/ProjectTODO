@@ -11,6 +11,93 @@
     cursor: pointer;
   }
 
+  /* section  过渡*/
+  .bg {
+    width: 100%;
+    height: 270px;
+  }
+
+  .content-inner {
+    margin-top: 5rem;
+    width: 100%;
+    height: 270px;
+    background-image: url("./../imgs/business/513-1920x968.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .content-inner::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section-box {
+    width: 80%;
+  }
+
+  .section-text {
+    z-index: 5;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .section-content {
+    width: 50%;
+  }
+
+  .btn-wrap {
+    width: 50%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-box {
+    width: 50%;
+    margin: 0 auto;
+    z-index: 5;
+    color: #fff;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-box:hover {
+    color: #111;
+    cursor: pointer;
+    background-color: #fff;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* 技能 */
+
   /* contact-section  */
   .contact {
     background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
@@ -361,7 +448,92 @@
     cursor: pointer;
   }
 
-  
+  /* section  过渡*/
+  .bg {
+    width: 100%;
+    height: 270px;
+  }
+
+  .content-inner {
+    margin-top: 5rem;
+    width: 100%;
+    height: 270px;
+    background-image: url("./../imgs/business/513-1920x968.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .content-inner::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-inner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section-box {
+    width: 80%;
+  }
+
+  .section-text {
+    z-index: 5;
+    padding: 15px;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .section-content {
+    width: 50%;
+  }
+
+  .btn-wrap {
+    width: 50%;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-box {
+    width: 50%;
+    margin: 0 auto;
+    z-index: 5;
+    color: #fff;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-box:hover {
+    color: #111;
+    cursor: pointer;
+    background-color: #fff;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* 技能 */
 
   /* contact-section  */
   .contact {
@@ -696,6 +868,84 @@
     cursor: pointer;
   }
 
+
+  .bg {
+    width: 100%;
+
+  }
+
+  .content-inner {
+    margin-top: 5rem;
+    width: 100%;
+    height: 270px;
+    background-image: url("./../imgs/business/513-1920x968.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    display: block;
+    z-index: 5;
+  }
+
+  .content-inner::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-box {
+    width: 100%;
+    display: block;
+  }
+
+  .section-text {
+    width: 100%;
+    display: block;
+    padding: 20px;
+
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto; */
+  }
+
+  .btn-box {
+    width: 50%;
+    margin: 0 auto;
+    z-index: 5;
+    color: #fff;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-box:hover {
+    cursor: pointer;
+    color: #111;
+    background-color: #fff;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* section  过渡*/
+
+  /* 技能 */
+
   /* contact-section  */
   .contact {
     background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
@@ -955,10 +1205,10 @@
   }
 
   /* team-cards */
+
   .team-inner {
-    width: 80%;
-    margin-bottom: 25px;
     display: inline;
+
   }
 
   .team-item {
@@ -1090,80 +1340,9 @@
   margin: 20px;
 }
 
+
+
 /* section  过渡*/
-.bg {
-
-  width: 100%;
-  height: 270px;
-}
-
-.content-inner {
-  margin-top: 5rem;
-  width: 100%;
-  height: 270px;
-  background-image: url("./../imgs/business/513-1920x968.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  position: relative;
-}
-
-.content-inner::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.content-inner {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.section-text {
-  z-index: 5;
-  padding: 15px;
-  color: #fff;
-  font-size: 16px;
-}
-
-.btn-box {
-  z-index: 5;
-  color: #fff;
-  font-weight: 500;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px;
-  transition-property: background-color, color;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-}
-
-.btn-box:hover {
-  cursor: pointer;
-  color: #111;
-  background-color: #fff;
-  transition-property: background-color, color;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-}
-
-.btn-wrap a {
-  font-size: 18px;
-}
-
-.bg {
-  width: 100%;
-
-}
-
 .content-inner {
   margin-top: 5rem;
   width: 100%;
@@ -1203,29 +1382,7 @@
   text-align: center;
 }
 
-.btn-wrap {
-  width: 50%;
-  margin: 0 auto;
-  z-index: 5;
-  color: #fff;
-  font-weight: 500;
-  border: 1px solid white;
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px;
-  transition-property: background-color, color;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-}
 
-.btn-wrap:hover {
-  cursor: pointer;
-  color: #111;
-  background-color: #fff;
-  transition-property: background-color, color;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-in-out;
-}
 
 /* section  过渡*/
 
