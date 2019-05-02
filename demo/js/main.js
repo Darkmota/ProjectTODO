@@ -5,7 +5,8 @@
 
 const Constants = {
   locale: ['ja_JP', 'en_US', 'zh_CN'],
-  localeLocalStorageKey: 'bizplus-locale'
+  localeLocalStorageKey: 'bizplus-locale',
+  localSelector: 'h1, h2, h3, h4, h5, h6, div, span, p, b, a'
 }
 let Global = {}
 
@@ -25,6 +26,7 @@ function getQueryStringByName(name) {
 function changeLocale (newLocale) {
   if (Constants.locale.indexOf(newLocale) !== -1) {
     if (Global.locale !== newLocale) {
+      Global.locale = newLocale
       localStorage.setItem(Constants.localeLocalStorageKey, newLocale)
     } else {
       console.log(`New locale(${newLocale}) is same with thie old one.`)
@@ -39,10 +41,20 @@ function changeLocale (newLocale) {
  *
  */
 function renderI18n () { 
-  console.log(Global.locale)
+  console.log(`Old locale: ${Global.locale}`)
   let newLocale = getQueryStringByName('locale')
-  if (newLocale !== '') {
-    changeLocale(newLocale)
+  console.log(`New locale: ${newLocale}`)
+  changeLocale(newLocale)
+  switch (Global.locale) {
+    case 'ja_JP':
+      $(Constants.localSelector).css('font-family', "'M PLUS Rounded 1c', 'Kosugi Maru', 'メイリオ', 'Hiragino Kaku Gothic ProN', Verdana, Arial, Helvetica, sans-serif")
+      break
+    case 'en_US':
+      $(Constants.localSelector).css('font-family', 'Nunito, Roboto')
+      break
+    case 'zh_CN':
+      $(Constants.localSelector).css('font-family', "'微软雅黑', '黑体', '宋体'")
+      break
   }
   $.i18n.properties({  
     name: 'strings',
