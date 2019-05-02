@@ -36,9 +36,21 @@
         margin-top: 50px;
     }
 
-    .svg-down {
+    .second-menu-item:hover {
+        color: #006EB7;
+        transition: all .35s;
+        cursor: pointer;
+      }
+      
+      .svg-down {
+        transition: all .35s;
         float: right;
-    }
+      }
+      
+      .second-menu-item:hover>span>i {
+        transition: all .35s;
+        transform: rotate(180deg);
+      }
 }
 
 @media screen and (max-width:760px) {
@@ -67,9 +79,21 @@
         margin-top: 50px;
     }
 
-    .svg-down {
+    .second-menu-item:hover {
+        color: #006EB7;
+        transition: all .35s;
+        cursor: pointer;
+      }
+      
+      .svg-down {
+        transition: all .35s;
         float: right;
-    }
+      }
+      
+      .second-menu-item:hover>span>i {
+        transition: all .35s;
+        transform: rotate(180deg);
+      }
 
     .second-menu-nav {
         width: 100%;
