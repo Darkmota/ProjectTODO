@@ -80,7 +80,7 @@
   border: 1px solid white;
   border-radius: 5px;
   text-align: center;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 30px 10px 30px;
   transition-property: background-color, color;
   transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
@@ -97,17 +97,22 @@
 
 /* footer-part */
 .footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
 
 .footer .c-white {
   color: #fff;
 }
 
+.footer-inner {
+  width: 95%;
+}
+
 .footer__wrapper {
   display: flex;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .footer__links {
@@ -133,13 +138,7 @@
   list-style: none;
 }
 
-.footer__newsletter {
-  justify-content: flex-end;
-  margin: 0;
-  max-width: 280px;
-  order: 1;
-  /* 移动端要order:-1 使得此元素在首位 */
-}
+
 
 .footer a {
   color: inherit;
@@ -172,24 +171,44 @@
   margin-bottom: 1em;
 }
 
+.footer__newsletter {
+  justify-content: flex-end;
+  margin: 0;
+  max-width: 300px;
+  order: 1;
+  padding-right: 25px;
+  margin-right: 25px;
+
+  /* 移动端要order:-1 使得此元素在首位 */
+}
+
+.footer-from {
+  max-width: 300px;
+  overflow: hidden;
+}
+
 .newsletter.is-light input {
   color: #fff;
   border: 1px solid #fff;
-}
-
-.reader {
   outline: none;
   background: transparent;
   /* background-color: #003149; */
   padding: 1.6em 1.4em 1.7em;
-  width: 100%;
+  /* width: 80%; */
+  width: 90%;
+
+}
+
+.newsletter {
+  position: relative;
 }
 
 .newsletter button {
   outline: none;
+  position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
+  right: 25px;
   -webkit-appearance: none;
   background: transparent;
   border: 0;
@@ -207,8 +226,11 @@
 }
 
 .colophon__wrapper {
+  width: 95%;
+  margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+
 }
 
 .colophon__wrapper a {
