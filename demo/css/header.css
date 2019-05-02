@@ -83,10 +83,8 @@
   }
 
   .navbar-center .menu-item {
-    /* flex-wrap: nowrap; */
     margin-left: 17.5px;
     margin-right: 17.5px;
-    /* margin: 22.5px; */
     color: #333;
     height: 100%;
     display: flex;
@@ -339,7 +337,7 @@
   }
 
   .nav-logo {
-    width: 75%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +359,8 @@
   }
 
   .nav-right {
-    width: 20%;
+    margin-left: 70px;
+    width: 15%;
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -631,7 +630,7 @@
   }
 
   .nav-logo {
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
