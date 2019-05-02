@@ -1,4 +1,5 @@
 @media screen and (min-width:1200px) {
+
     .left-fold,
     .second-menu,
     .second-menu-nav {
@@ -36,21 +37,45 @@
         margin-top: 50px;
     }
 
-    .second-menu-item:hover {
-        color: #006EB7;
-        transition: all .35s;
-        cursor: pointer;
-      }
-      
-      .svg-down {
-        transition: all .35s;
-        float: right;
-      }
-      
-      .second-menu-item:hover>span>i {
-        transition: all .35s;
-        transform: rotate(180deg);
-      }
+    .expand>ul {
+    display: none;
+    font-weight: normal;
+    padding: 10px 2rem 10px 2rem;
+    background-color: #fff;
+    opacity: 1;
+  }
+
+  .expand>ul>li {
+    width: 70%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .expand>ul>li:hover {
+    color: #fff;
+    background-color: #264989;
+  }
+
+  .expand>ul>li>a {
+    display: block;
+    width: 100%;
+    color: #333;
+    margin: 0;
+    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  }
+
+  .expand>ul>li:hover>a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .expand>ul>li:hover>a>i {
+    color: #fff;
+    text-decoration: none;
+  }
+
 }
 
 @media screen and (max-width:760px) {
@@ -79,20 +104,43 @@
         margin-top: 50px;
     }
 
-    .second-menu-item:hover {
-        color: #006EB7;
-        transition: all .35s;
-        cursor: pointer;
+    .expand>ul {
+        display: none;
+        font-weight: normal;
+        padding: 10px 2rem 10px 2rem;
+        background-color: #fff;
+        opacity: 1;
       }
-      
-      .svg-down {
-        transition: all .35s;
-        float: right;
+    
+      .expand>ul>li {
+        width: 70%;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
-      
-      .second-menu-item:hover>span>i {
-        transition: all .35s;
-        transform: rotate(180deg);
+    
+      .expand>ul>li:hover {
+        color: #fff;
+        background-color: #264989;
+      }
+    
+      .expand>ul>li>a {
+        display: block;
+        width: 100%;
+        color: #333;
+        margin: 0;
+        padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+      }
+    
+      .expand>ul>li:hover>a {
+        color: #fff;
+        text-decoration: none;
+      }
+    
+      .expand>ul>li:hover>a>i {
+        color: #fff;
+        text-decoration: none;
       }
 
     .second-menu-nav {
@@ -120,7 +168,7 @@
         justify-content: center;
     }
 
-    .fa-search{
+    .fa-search {
         margin-top: 8px;
     }
 }

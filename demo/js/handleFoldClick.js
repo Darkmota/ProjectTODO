@@ -9,4 +9,14 @@ $(document).ready(function(e) {
             $(".main-content").animate({opacity:0.5},600);
         }
     });
+
+    $(".expand").click(function(e) {   
+        console.log($(this).attr("id"));   
+        if($(this).children("ul").css("display") === "none"){
+            $(this).children("ul").css("display","block");
+        }
+        else{
+            $(this).children("ul").css("display","none");
+        }
+    })
 });
