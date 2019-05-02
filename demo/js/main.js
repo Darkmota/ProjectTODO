@@ -4,7 +4,7 @@
  */
 
 const Constants = {
-  locale: ['ja-JP', 'en-US', 'zh-CN'],
+  locale: ['ja_JP', 'en_US', 'zh_CN'],
   localeLocalStorageKey: 'bizplus-locale'
 }
 let Global = {}
@@ -31,19 +31,36 @@ function changeLocale (newLocale) {
  * Render i18n
  *
  */
-function renderI18n () {
+function renderI18n () { 
+  console.log(Global.locale)
   $.i18n.properties({  
-      name: 'strings',    //属性文件名     命名格式： 文件名_国家代号.properties
-      path: 'https://bizplus.dynami.tech/demo/i18n/static/',   //注意这里路径是你属性文件的所在文件夹
-      mode: 'map',  
-      language: Global.locale,     //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
-      callback: function () {  
-        $("[i]").each(function () {  
-          console.log($(this).data("locale"))
-          $(this).html($.i18n.prop($(this).data("locale")))
+    name: 'strings',    //属性文件名     命名格式： 文件名_国家代号.properties
+    path: 'https://bizplus.dynami.tech/demo/i18n/static/',   //注意这里路径是你属性文件的所在文件夹
+    mode: 'map',  
+    language: Global.locale,     //这就是国家代号 name+language刚好组成属性文件名：strings+zh -> strings_zh.properties
+    callback: function () {
+      try {
+        $('[data-i18n-placeholder]').each(function () {
+          $(this).attr('placeholder', $.i18n.prop($(this).data('i18n-placeholder')));
+        });
+        $('[data-i18n-text]').each(function () {
+          let html = $(this).html()
+          let reg = /<(.*)>/
+          if (reg.test(html)) {
+              let htmlValue = reg.exec(html)[0];
+              $(this).html(htmlValue + $.i18n.prop($(this).data('i18n-text')));
+          }
+          else {
+              $(this).text($.i18n.prop($(this).data('i18n-text')))
+          }
         })
-      }  
-  });  
+        $('[data-i18n-value]').each(function () {
+          $(this).val($.i18n.prop($(this).data('i18n-value')))
+        })
+      }
+      catch (ex){ }
+    }  
+  })
   /*
   $('.menu-item')[0].innerText = Global.i18n.header.homepage
   $('.menu-item')[1].innerText = Global.i18n.header.information.name
@@ -58,10 +75,7 @@ function renderI18n () {
  */
 function init () {
   Global.locale = localStorage.getItem(Constants.localeLocalStorageKey) || Constants.locale[0]
-  $.getJSON(`https://bizplus.dynami.tech/demo/i18n/static/${Global.locale}.json`, (i18n) => {
-    Global.i18n = i18n
-    renderI18n()
-  })
+  renderI18n()
 }
 
 init()
