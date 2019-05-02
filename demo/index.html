@@ -158,12 +158,24 @@
 
     <div class="second-menu-nav">
       <div class="nav-search">
-        <span style="padding: 0; margin-right: 5px;margin-top:3px;">Search</span>
-        <i class="fas fa-search"></i>
+        <div class="search-click">
+          <i class="fas fa-search search-on"></i>
+          <i class="fas fa-times search-off" style="padding-top:8px;"></i>
+        </div>
       </div>
-      <div class="nav-lan">
-        <span style="padding: 0; margin-right: 5px;">English</span>
-        <i class="fas fa-angle-down svg-down"></i>
+      <div class="search-input">
+        <input type="text" data-i18n-placeholder="input_here">
+        <div class=""><button id="btn-search"><i class="fas fa-search"></i></button></div>
+      </div>
+      <div class="nav-lan second-nav-lan">
+        <div data-i18n-text-left="language">
+          <i class="fas fa-angle-down svg-down"></i>
+        </div>
+        <ul class="lan-select">
+          <li><a href="./index.html?locale=ja_JP">日本語</a></li>
+          <li><a href="./index.html?locale=en_US">English</a></li>
+          <li><a href="./index.html?locale=zh_CN">中文</a></li>
+        </ul>
       </div>
     </div>
   </div>

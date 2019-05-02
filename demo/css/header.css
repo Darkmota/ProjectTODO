@@ -274,7 +274,7 @@
     background: transparent;
     border-radius: 0.45rem;
     border: 1px solid #264989;
-    padding: 6px;
+    padding: 8px;
   }
 
   .search-input button {
@@ -300,9 +300,6 @@
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
   }
-
-
-
   /* 页面大于1200px */
 }
 
@@ -482,7 +479,6 @@
   }
 
   .search-input {
-    /* display: none; */
     display: none;
     position: absolute;
     top: 80px;
@@ -626,18 +622,13 @@
     align-items: center;
   }
 
-  .nav-lan:hover>div>i {
-    transition-duration: 0.35s;
-    transition-timing-function: ease-out;
+  .nav-lan>div>i {
     transform: rotate(180deg);
   }
 
   .nav-lan:hover {
     text-decoration: underline;
-    color: #264989c5;
     cursor: pointer;
-    transition-duration: 0.35s;
-    transition-timing-function: ease-out;
   }
 
   .nav-lan .lan-select {
@@ -648,20 +639,14 @@
     border-radius: 0.45rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
     background-color: #fff;
-    position: relative;
+    position: absolute;
+    bottom: 15px;
     opacity: 1;
-    transition: all .3s 0s cubic-bezier(.165, .84, .44, 1);
   }
 
   .nav-lan .lan-select>li>a {
     text-decoration: none;
     color: #333;
-  }
-
-  .nav-lan:hover>.lan-select {
-    display: block;
-    position: absolute;
-    top: 80px;
   }
 
   .nav-lan .lan-select>li>a:hover {
@@ -698,18 +683,21 @@
   }
 
   .search-input {
-    /* display: none; */
     display: none;
+    width: 100%;
     position: absolute;
-    top: 80px;
+    top: -78px;
     right: 0;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem;
     border-radius: 0.45rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
     background-color: #fff;
   }
 
   .search-input input {
+    width: 75%;
+    height: 45px;
+    float: left;
     outline: none;
     background: transparent;
     border-radius: 0.45rem;
@@ -718,10 +706,11 @@
   }
 
   .search-input button {
+    width: 20%;
+    height: 45px;
     color: #333;
     margin-left: 8px;
-    padding: 6px;
-    padding: 6px 1rem 6px 1rem;
+    padding: 6px 2rem 6px 1rem;
     border: 2px solid #264989c7;
     border-radius: 0.45rem;
     background-color: #fff;
@@ -739,6 +728,10 @@
     transition-property: background-color, color;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+  }
+
+  .search-off{
+
   }
 
   .menu-item>ul {

@@ -1,61 +1,63 @@
 @media screen and (min-width:1200px) {
 
-    .left-fold,
-    .second-menu,
-    .second-menu-nav {
-        display: none;
-    }
+  .left-fold,
+  .second-menu,
+  .second-menu-nav {
+    display: none;
+  }
 }
 
 @media screen and (max-width:1200px) and (min-width:760px) {
-    .second-menu-nav {
-        display: none;
-    }
+  .second-menu-nav {
+    display: none;
+  }
 
-    .left-fold {
-        display: flex;
-    }
+  .left-fold {
+    display: flex;
+  }
 
-    .img-fold {
-        width: 32.5px;
-        height: auto;
-        cursor: pointer;
-    }
+  .img-fold {
+    width: 32.5px;
+    height: auto;
+    cursor: pointer;
+  }
 
-    .second-menu {
-        width: 80%;
-        height: 100%;
-        background-color: #fff;
-        position: fixed;
-        top: 80px;
-        left: -80%;
-        z-index: 9;
-    }
+  .second-menu {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 80px;
+    left: -80%;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
-    .second-menu-item {
-        margin: 22.5px;
-        margin-top: 50px;
-    }
+  .second-menu-item {
+    margin: 22.5px;
+    margin-top: 50px;
+    cursor: pointer;
+  }
 
-    .expand>ul {
+  .second-menu-item:hover {
+    color: #ccc;
+  }
+
+  .expand>ul {
     display: none;
     font-weight: normal;
-    padding: 10px 2rem 10px 2rem;
+    padding: 10px 1rem 10px 1rem;
     background-color: #fff;
     opacity: 1;
   }
 
   .expand>ul>li {
-    width: 70%;
+    width: 100%;
     font-size: 14px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  }
-
-  .expand>ul>li:hover {
-    color: #fff;
-    background-color: #264989;
   }
 
   .expand>ul>li>a {
@@ -63,112 +65,115 @@
     width: 100%;
     color: #333;
     margin: 0;
-    padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+    padding: 0.6rem 0 0.6rem 0;
   }
 
   .expand>ul>li:hover>a {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
   }
 
   .expand>ul>li:hover>a>i {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
   }
 
 }
 
 @media screen and (max-width:760px) {
-    .left-fold {
-        display: flex;
-    }
+  .left-fold {
+    display: flex;
+  }
 
-    .img-fold {
-        width: 80%;
-        height: auto;
-        cursor: pointer;
-    }
+  .img-fold {
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+  }
 
-    .second-menu {
-        width: 80%;
-        height: 100%;
-        background-color: #fff;
-        position: fixed;
-        top: 60px;
-        left: -80%;
-        z-index: 9;
-    }
+  .second-menu {
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 60px;
+    left: -80%;
+    z-index: 9;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
-    .second-menu-item {
-        margin: 22.5px;
-        margin-top: 50px;
-    }
+  .second-menu-item {
+    margin: 22.5px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
 
-    .expand>ul {
-        display: none;
-        font-weight: normal;
-        padding: 10px 2rem 10px 2rem;
-        background-color: #fff;
-        opacity: 1;
-      }
-    
-      .expand>ul>li {
-        width: 70%;
-        font-size: 14px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-    
-      .expand>ul>li:hover {
-        color: #fff;
-        background-color: #264989;
-      }
-    
-      .expand>ul>li>a {
-        display: block;
-        width: 100%;
-        color: #333;
-        margin: 0;
-        padding: 0.6rem 1.5rem 0.6rem 1.5rem;
-      }
-    
-      .expand>ul>li:hover>a {
-        color: #fff;
-        text-decoration: none;
-      }
-    
-      .expand>ul>li:hover>a>i {
-        color: #fff;
-        text-decoration: none;
-      }
+  .second-menu-item:hover {
+    color: #ccc;
+  }
 
-    .second-menu-nav {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        border-top: 1px solid #ddd;
-        position: absolute;
-        bottom: 60px;
-        text-align: center;
-    }
+  .expand>ul {
+    display: none;
+    font-weight: normal;
+    padding: 5px 0 5px 0;
+    background-color: #fff;
+    opacity: 1;
+  }
 
-    .nav-search {
-        width: 50%;
-        height: 30px;
-        border-right: 1px solid #ddd;
-        display: flex;
-        justify-content: center;
-    }
+  .expand>ul>li {
+    width: 100%;
+    font-size: 12px;
+    list-style-type: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 
-    .nav-lan {
-        width: 50%;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-    }
+  .expand>ul>li>a {
+    display: block;
+    width: 100%;
+    color: #333;
+    margin: 0;
+    padding: 0.6rem 0 0.6rem 0;
+  }
 
-    .fa-search {
-        margin-top: 8px;
-    }
+  .expand>ul>li:hover>a {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .expand>ul>li:hover>a>i {
+    color: #ccc;
+    text-decoration: none;
+  }
+
+  .second-menu-nav {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .nav-search {
+    width: 50%;
+    height: 30px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-lan {
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .fa-search {
+    margin-top: 8px;
+  }
 }
