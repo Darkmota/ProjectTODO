@@ -1,14 +1,41 @@
 /* 走马灯 */
-.carousel {
-  height: calc(100vh - 80px);
-  margin-top: 0px;
+@media screen and (min-width:1200px) {
+  .carousel {
+    height: calc(100vh - 80px);
+    margin-top: 0px;
+  }
 
+  .carousel-img {
+    height: calc(100vh - 80px);
+    object-fit: cover;
+    cursor: pointer;
+  }
 }
 
-.carousel-img {
-  height: calc(100vh - 80px);
-  object-fit: cover;
-  cursor: pointer;
+@media screen and (max-width:1200px) and (min-width:760px) {
+  .carousel {
+    height: calc(100vh - 60px);
+    margin-top: 0px;
+  }
+
+  .carousel-img {
+    height: calc(100vh - 60px);
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width:760px) {
+  .carousel {
+    height: calc(100vh - 60px);
+    margin-top: 0px;
+  }
+
+  .carousel-img {
+    height: calc(100vh - 60px);
+    object-fit: cover;
+    cursor: pointer;
+  }
 }
 
 .carousel-item {
@@ -380,11 +407,12 @@
 }
 
 .news-list p {
-  margin: 0; 
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
 .news-list li {
   padding: 10px;
 }
@@ -418,6 +446,7 @@
   letter-spacing: 0.5px;
   border-radius: 5px;
 }
+
 .news-list .topics-time {
   padding: 10px;
 }
@@ -553,12 +582,18 @@
   -moz-transition: all .9s 0s cubic-bezier(.165, .84, .44, 1);
   transition: all .9s 0s cubic-bezier(.165, .84, .44, 1);
 }
-.event .event_ul li .detail_area .title{
-margin: 0;
+
+.event .event_ul li .detail_area .title {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.event .event_ul li:hover{
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.308); 
+
+.event .event_ul li:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.308);
 }
+
 .event .event_ul li>a>p>img {
   transform: scale(1);
   transition: all .9s 0s cubic-bezier(.165, .84, .44, 1);
@@ -568,6 +603,7 @@ margin: 0;
   transform: scale(1.1);
   transition: all .9s 0s cubic-bezier(.165, .84, .44, 1);
 }
+
 .event .event_ul li:hover>a>div {
   background-color: #264989;
   color: #fff;

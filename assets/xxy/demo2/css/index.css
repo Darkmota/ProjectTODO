@@ -1,14 +1,38 @@
 /* 走马灯 */
-.carousel {
-  height: calc(100vh - 80px);
-  margin-top: 0px;
+@media screen and (min-width:1200px) {
+  .carousel {
+    height: calc(100vh - 80px);
+    margin-top: 0px;
+  }
+  .carousel-img {
+    height: calc(100vh - 80px);
+    object-fit: cover;
+    cursor: pointer;
+  }
 }
 
-.carousel-img {
-  height: calc(100vh - 80px);
-  object-fit: cover;
-  cursor: pointer;
+@media screen and (max-width:1200px) and (min-width:760px) {
+  .carousel {
+    height: calc(100vh - 60px);
+    margin-top: 0px;
+  }
+  .carousel-img {
+    height: calc(100vh - 60px);
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
 
+@media screen and (max-width:760px) {
+  .carousel {
+    height: calc(100vh - 60px);
+    margin-top: 0px;
+  }
+  .carousel-img {
+    height: calc(100vh - 60px);
+    object-fit: cover;
+    cursor: pointer;
+  }
 }
 
 .carousel-inner {

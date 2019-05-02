@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- normalize -->
   <link rel="stylesheet" href="./css/normalize.css">
@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./lib/animate.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/fold.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="./css/web-end.css">
@@ -24,6 +25,12 @@
   <!-- header center -->
   <div class="g-navbar">
     <div class="nav">
+
+      <!--fold-->
+      <div class="left-fold">
+        <img src="./imgs/icon-fold.svg" class="img-fold" id="btn-fold">
+      </div>
+
       <div class="nav-logo ">
         <a class="navbar-brand " href="#">
           <img src="./imgs/Biz.png" class="img-responsive">
@@ -99,7 +106,43 @@
       </div>
     </div>
   </div>
-  <!-- header center -->
+
+  <div class="second-menu">
+
+      <div class="second-menu-item">
+        <span>Information
+          <i class="fas fa-angle-down svg-down"></i>
+        </span>
+      </div>
+  
+      <div class="second-menu-item">
+        <span>Profile
+          <i class="fas fa-angle-down svg-down"></i>
+        </span>
+      </div>
+  
+      <div class="second-menu-item">
+        <span>Benefit
+          <i class="fas fa-angle-down svg-down"></i>
+        </span>
+      </div>
+  
+      <div class="second-menu-item">Recruitment</div>
+  
+      <div class="second-menu-item">About</div>
+        
+      <div class="second-menu-nav">
+          <div class="nav-search">
+              <span style="padding: 0; margin-right: 5px;margin-top:3px;">Search</span>
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="nav-lan">
+              <span style="padding: 0; margin-right: 5px;">English</span>
+              <i class="fas fa-angle-down svg-down"></i>
+            </div>
+      </div>
+    </div>
+
   <!-- main-content -->
   <div class="main-content">
     <!-- carousel -->
@@ -701,24 +744,21 @@
         </div>
       </footer>
     </div>
-    <!-- web-end -->
-  </div>
-  <!-- main-content -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script>
 
-  <!-- init -->
-  <script src="./js/main.js"></script>
-  <script src="./js/map.js"></script>
+    <!-- init -->
+    
+    <script src="./js/main.js"></script>
+    <script src="./js/map.js"></script>
+    <script type="text/javascript" src="./js/handleFoldClick.js"></script>
 </body>
 
 </html>
