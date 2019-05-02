@@ -331,14 +331,12 @@
   }
   
   .footer__wrapper {
-    display: flex;
     padding-top: 50px;
   }
 
   .footer__links {
   margin: 0px;
   padding: 0;
-  justify-content: flex-start;
   width: 100%;
 }
 
@@ -349,7 +347,6 @@
 }
 
 .footer__links>li {
-  float: left;
   margin-bottom: 30px;
   margin-right: 7%;
 }
@@ -359,7 +356,6 @@
 }
 
 .footer__newsletter {
-  justify-content: flex-end;
   margin: 0;
   max-width: 280px;
   order: 1;
