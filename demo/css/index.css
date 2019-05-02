@@ -11,6 +11,7 @@
     cursor: pointer;
   }
 
+
   /* section  过渡*/
   .bg {
     width: 100%;
@@ -868,6 +869,73 @@
     cursor: pointer;
   }
 
+  /* serve-cards */
+  .serve-inner {
+    width: 100%;
+    margin-bottom: 2.5rem;
+    display: inline;
+  }
+
+  .serve-item {
+    width: 100%;
+    margin: 10%;
+    margin-bottom: 50px;
+  }
+
+  .serve-item .item-content {
+    overflow: hidden;
+    text-align: center;
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  .serve-item .item-content img {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 1s ease 0s;
+  }
+
+  .serve-item .item-content img:hover {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 1s ease 0s;
+  }
+
+  .serve-item .item-content .item-txt a {
+    color: #111;
+  }
+
+  .serve-item .item-content .item-txt h3 {
+    color: #111;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    opacity: 1;
+    transition-duration: .5s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity, text-decoration;
+  }
+
+  .serve-item .item-content .item-txt h3:hover {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+    opacity: 0.65;
+    transition-duration: .5s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity, text-decoration;
+  }
+
+  .serve-item .item-content .item-txt p {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
 
   .bg {
     width: 100%;
@@ -1403,8 +1471,9 @@
 }
 
 .serve-item {
-  width: 33.3%;
+  width:100%;
   padding: 15px;
+  margin: 0;
 }
 
 .serve-item .item-content {
