@@ -459,7 +459,7 @@
   
   .work .work_ul li {
     /* float: left; */
-    width: 230px;
+    width: 80%;
     margin: 10px;
     position: relative;
     overflow: hidden;
