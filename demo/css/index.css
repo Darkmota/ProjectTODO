@@ -467,6 +467,28 @@
     position: relative;
   }
 
+  /* serve */
+  .serve {
+    width: 100%;
+
+  }
+
+  .serve-inner {
+    width: 100%;
+    display: block;
+  }
+
+  .serve-item {
+    width: 100%;
+  }
+
+  .serve-item .item-content img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* serve */
+
   .content-inner::after {
     position: absolute;
     top: 0;
@@ -792,21 +814,24 @@
   }
 
   /* team-cards */
+
+  .team {
+    width: 100%;
+  }
+
   .team-inner {
-    width: 80%;
-    margin-bottom: 2.5rem;
+    width: 100%;
+    margin: 10%;
+    display: block;
   }
 
   .team-item {
-    width: 33.3%;
-    margin: 10px;
+    width: 100%;
   }
 
   .team-item .item-content {
     overflow: hidden;
     text-align: center;
-    min-height: 400px;
-    max-height: 400px;
   }
 
   .team-item-content img {
@@ -873,20 +898,17 @@
   .serve-inner {
     width: 100%;
     margin-bottom: 2.5rem;
-    display: inline;
+    display: block;
   }
 
   .serve-item {
     width: 100%;
     margin: 10%;
-    margin-bottom: 50px;
   }
 
   .serve-item .item-content {
     overflow: hidden;
     text-align: center;
-    min-height: 400px;
-    max-height: 400px;
   }
 
   .serve-item .item-content img {
@@ -1274,21 +1296,18 @@
 
   /* team-cards */
 
-  .team-inner {
-    display: inline;
+  .team {
+    width: 100%;
+  }
 
+  .team-inner {
+    width: 100%;
+    margin: 10%;
+    display: block;
   }
 
   .team-item {
-    width: 80%;
-    margin: 10%;
-    margin-bottom: 50px;
-  }
-
-  .team-item .item-content {
-    text-align: center;
-    min-height: 400px;
-    max-height: 400px;
+    width: 100%;
   }
 
   .team-item-content img {
@@ -1471,7 +1490,7 @@
 }
 
 .serve-item {
-  width:100%;
+  width: 100%;
   padding: 15px;
   margin: 0;
 }
@@ -1479,8 +1498,6 @@
 .serve-item .item-content {
   overflow: hidden;
   text-align: center;
-  min-height: 400px;
-  max-height: 400px;
 }
 
 .serve-item .item-content img {
