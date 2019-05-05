@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- normalize -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- out CSS and font -->
+  <link href="https://fonts.googleapis.com/css?family=Kosugi+Maru|Nunito|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./lib/fontawesome-free-5.8.1-web/css/all.css">
+  <link rel="stylesheet" href="./lib/animate.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/fold.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/web-end.css">
+  <title>Bizplus</title>
+</head>
+
+<body>
+  <!-- header -->
+  <div class="g-navbar">
+    <div class="g-nav">
+      <div class="left-fold">
+        <img src="./imgs/icon-fold.svg" class="img-fold" id="btn-fold">
+      </div>
+      <div class="nav-logo ">
+        <a class="navbar-brand " href="#">
+          <img src="./imgs/Biz.png" class="img-responsive">
+        </a>
+        <div class="logo-font">Bizplus</div>
+      </div>
+      <div class="nav-menu">
+        <div class="navbar-center">
+          <div class="menu-item caps" data-i18n-text="homepage"></div>
+          <div class="menu-item caps expand">
+            <span data-i18n-text-left="information">
+              <i class="fas fa-angle-down svg-down"></i>
+            </span>
+            <div class="menu-information"></div>
+            <ul>
+              <li><a href="#" data-i18n-text-right="company_profile"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="business_philosophy"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="representative_s_greetings"><i class="fas fa-arrow-right"></i></a>
+              </li>
+              <li><a href="#" data-i18n-text-right="privacy_policy"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="organizational_chart"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="access"><i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="menu-item caps expand">
+            <span data-i18n-text-left="business_field">
+              <i class="fas fa-angle-down svg-down"></i>
+            </span>
+            <ul>
+              <li><a href="#" data-i18n-text-right="business_summary"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="quality_control"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="development_language_and_environment"><i
+                    class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="foreign_temporary_staffing_business"><i
+                    class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="commission_proposal"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="other_business"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="development_performance"><i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="menu-item caps expand">
+            <span data-i18n-text-left="company_culture">
+              <i class="fas fa-angle-down svg-down"></i>
+            </span>
+            <ul>
+              <li><a href="#" data-i18n-text-right="welfare"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="leisure_and_entertainment"><i class="fas fa-arrow-right"></i></a>
+              </li>
+              <li><a href="#" data-i18n-text-right="medical_insurance"><i class="fas fa-arrow-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="menu-item caps" data-i18n-text="recruitment_information"></div>
+          <div class="menu-item caps" data-i18n-text="contact_us"></div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="nav-search" style="margin-right: 15px;">
+          <div class="search-click">
+            <i class="fas fa-search search-on"></i>
+            <i class="fas fa-times search-off"></i>
+          </div>
+        </div>
+        <div class="search-input">
+          <input type="text" data-i18n-placeholder="input_here">
+          <div class=""><button id="btn-search"><i class="fas fa-search"></i></button></div>
+        </div>
+        <div class="nav-lan">
+          <div data-i18n-text-left="language">
+            <i class="fas fa-angle-down svg-down"></i>
+          </div>
+          <ul class="lan-select">
+            <li><a href="./index.html?locale=ja_JP">日本語</a></li>
+            <li><a href="./index.html?locale=en_US">English</a></li>
+            <li><a href="./index.html?locale=zh_CN">中文</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="second-menu">
+
+    <div class="second-menu-item caps" data-i18n-text="homepage"></div>
+    <div class="second-menu-item caps expand">
+      <span data-i18n-text-left="information">
+        <i class="fas fa-angle-down svg-down"></i>
+      </span>
+      <div class="second-menu-information"></div>
+      <ul>
+        <li><a href="#" data-i18n-text-right="company_profile"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="business_philosophy"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="representative_s_greetings"><i class="fas fa-arrow-right"></i></a>
+        </li>
+        <li><a href="#" data-i18n-text-right="privacy_policy"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="organizational_chart"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="access"><i class="fas fa-arrow-right"></i></a></li>
+      </ul>
+    </div>
+    <div class="second-menu-item caps expand">
+      <span data-i18n-text-left="business_field">
+        <i class="fas fa-angle-down svg-down"></i>
+      </span>
+      <ul>
+        <li><a href="#" data-i18n-text-right="business_summary"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="quality_control"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="development_language_and_environment"><i
+              class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="foreign_temporary_staffing_business"><i
+              class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="commission_proposal"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="other_business"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="development_performance"><i class="fas fa-arrow-right"></i></a></li>
+      </ul>
+    </div>
+    <div class="second-menu-item caps expand">
+      <span data-i18n-text-left="company_culture">
+        <i class="fas fa-angle-down svg-down"></i>
+      </span>
+      <ul>
+        <li><a href="#" data-i18n-text-right="welfare"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="leisure_and_entertainment"><i class="fas fa-arrow-right"></i></a>
+        </li>
+        <li><a href="#" data-i18n-text-right="medical_insurance"><i class="fas fa-arrow-right"></i></a></li>
+      </ul>
+    </div>
+    <div class="second-menu-item caps" data-i18n-text="recruitment_information"></div>
+    <div class="second-menu-item caps" data-i18n-text="contact_us"></div>
+
+    <div class="second-menu-nav">
+      <div class="nav-search">
+        <div class="search-click">
+          <i class="fas fa-search search-on"></i>
+          <i class="fas fa-times search-off" style="padding-top:8px;"></i>
+        </div>
+      </div>
+      <div class="search-input">
+        <input type="text" data-i18n-placeholder="input_here">
+        <div class=""><button id="btn-search"><i class="fas fa-search"></i></button></div>
+      </div>
+      <div class="nav-lan second-nav-lan">
+        <div data-i18n-text-left="language">
+          <i class="fas fa-angle-down svg-down"></i>
+        </div>
+        <ul class="lan-select">
+          <li><a href="./index.html?locale=ja_JP">日本語</a></li>
+          <li><a href="./index.html?locale=en_US">English</a></li>
+          <li><a href="./index.html?locale=zh_CN">中文</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- header -->
+
+  <!-- main-content -->
+  <div class="main-content">
+    <!-- carousel -->
+    <div class="view-slide">
+      <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class=""></li>
+          <li data-target="#carousel" data-slide-to="1" class=""></li>
+          <li data-target="#carousel" data-slide-to="2" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./imgs/business/354-1920x968.jpg" class="d-block w-100 carousel-img" alt="carousel-img">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>America</h4>
+              <p> </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/business/418-1920x968.jpg" class="d-block w-100 carousel-img" alt="carousel-img">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Tokyo</h4>
+              <p> </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./imgs/business/857-1920x968.jpg" class="d-block w-100 carousel-img" alt="carousel-img">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>America</h4>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- areaTxt -->
+      <div class="visual_areaTxt">
+        <div class="visual_inner">
+          <h1 class="visual_title caps"><b data-i18n-text="carousel_title"></b>
+          </h1>
+          <p class="visual_text" data-i18n-text="carousel_content"> 
+          </p>
+        </div>
+      </div>
+      <!-- areaTxt -->
+    </div>
+    <!-- carousal -->
+    <!-- about us -->
+    <div class="about-us">
+      <div class="about-inner">
+        <b data-i18n-text="about_our_company"></b>
+        <h1 data-i18n-text="a_plus_for_your_business"></h1>
+        <hr>
+        <p data-i18n-text="introduction"></p>
+        <div class="about-icon">
+          <div class="about-icon-item">
+            <div><img src="./imgs/svg/professional.svg"></div>
+            <b data-i18n-text="profession"></b>
+          </div>
+          <div class="about-icon-item">
+            <div><img src="./imgs/svg/highly.svg"></div>
+            <b data-i18n-text="efficient"></b>
+          </div>
+          <div class="about-icon-item">
+            <div><img src="./imgs/svg/nice.svg"></div>
+            <b data-i18n-text="quality"></b>
+          </div>
+        </div>
+        <div class="fc">
+          <button class="btn-dark-blue caps" data-i18n-text="learn_more"></button>
+        </div>
+      </div>
+    </div>
+    <!-- about us -->
+    <!-- section 过渡 -->
+    <div class="bg">
+      <div class="content-inner">
+        <div class="section-box">
+          <div class="section-text">
+            <div class="section-content">
+              <h3 class="title" data-i18n-text="rich_variety_of_technologies"></h3>
+              <p data-i18n-text="rich_variety_of_technologies_1"></p>
+              <p data-i18n-text="rich_variety_of_technologies_2"></p>
+              <p data-i18n-text="rich_variety_of_technologies_3"></p>
+            </div>
+            <div class="btn-wrap">
+              <a class="btn-box clear-a" href="#" data-i18n-text="learn_more"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 过渡 -->
+    <!-- serve -->
+    <div class="cards">
+      <div class="part-title">
+        <h1 class="caps" data-i18n-text="our_services"></h1>
+        <hr>
+      </div>
+      <div class="serve fc">
+        <div class="serve-inner f">
+          <div class="serve-item">
+            <div class="item-content">
+              <div class="ofh">
+                <img src="./imgs//business/credit-card-terminal-1080x720.jpg" alt="">
+              </div>
+              <div class="item-txt">
+                <h3 class="caps"><a href="#" class="clear-a" data-i18n-text="foreign_temporary_staffing_business"></a>
+                </h3>
+                <p data-i18n-text="foreign_temporary_staffing_business_summary"></p>
+              </div>
+            </div>
+          </div>
+          <div class="serve-item">
+            <div class="item-content">
+              <div class="ofh"><img src="./imgs//business/team-leader-writing-on-white-board-1080x720.jpg" alt="">
+              </div>
+              <div class="item-txt">
+                <h3 class="caps"><a href="#" class="clear-a" data-i18n-text="commission_proposal"></a></h3>
+                <p data-i18n-text="commission_proposal_summary"></p>
+              </div>
+            </div>
+          </div>
+          <div class="serve-item">
+            <div class="item-content">
+              <div class="ofh">
+                <img src="./imgs/business/business-office-building-1080x720.jpg" alt="">
+              </div>
+              <div class="item-txt">
+                <h3 class="caps"><a href="#" class="clear-a" data-i18n-text="other_business"></a></h3>
+                <p data-i18n-text="other_business_summary"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fc">
+        <div><button class="btn-dark-blue caps" data-i18n-text="learn_more"></button></div>
+      </div>
+    </div>
+    <!-- serve -->
+    <!-- Work -->
+    <div class="work">
+      <div class="part-title">
+        <h1 class="caps" data-i18n-text="our_works"></h1>
+        <hr>
+      </div>
+      <ul class="work_ul">
+        <li>
+          <a href="#">
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px"></p>
+            <div class="detail_area">
+              <h5 class="title" data-i18n-text="work_1">スタッフ募集！！【キャリア採用】</h5>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <p class="img">
+              <img width="476" height="320" src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px">
+            </p>
+            <div class="detail_area">
+              <h5 class="title" data-i18n-text="work_2">株式会社三光製作所様　Webサイト123123123</h5>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <p class="img">
+              <img width="476" height="320" src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px">
+            </p>
+            <div class="detail_area">
+              <h5 class="title" data-i18n-text="work_3" 株式会社三光製作所様　Webサイト123123123</h5> </div> </a> </li> <li>
+                <a href="#">
+                  <p class="img">
+                    <img width="476" height="320"
+                      src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg"
+                      class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                      srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7-300x202.jpg 300w"
+                      sizes="(max-width: 476px) 100vw, 476px">
+                  </p>
+                  <div class="detail_area">
+                    <h5 class="title" data-i18n-text="work_4">株式会社三光製作所様　Webサイト123123123</h5>
+                  </div>
+                </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px"></p>
+            <div class="detail_area">
+              <h5 class="title" data-i18n-text="work_5">北陸朝日放送株式会社様　ギュッ！と石･･･</h5>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2018/06/abc-476x320.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""></p>
+            <div class="detail_area">
+              <h5 class="title" data-i18n-text="work_6">石川テレビ企業株式会社様　Webサイ･･･</h5>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="fc">
+        <div><button class="btn-dark-blue caps" data-i18n-text="learn_more"></button></div>
+      </div>
+    </div>
+
+    <!-- Work -->
+    <!-- contact -->
+    <div class="contact">
+      <div class="line fc z100">
+        <div class="line-inner fc fw z100">
+          <div class="line-txt-l txt-c">
+            <div class="txt-item">
+              <h4 class="c-dark" data-i18n-text="faq_by_form"></h4>
+              <p data-i18n-text="faq_by_form_summary"></p>
+              <a href="#" class="clear-a" data-i18n-text="contact_us"></a>
+            </div>
+          </div>
+          <div class="line-txt-r txt-c">
+            <div class="txt-item">
+              <h4 class="c-dark" data-i18n-text="faq_by_tel"></h4>
+              <p data-i18n-text="faq_by_tel_summary"></p>
+              <a href="#" class="clear-a">TEL 03-6709-8260
+              </a>
+              <div style="font-size: 12px;" data-i18n-text="reception_time"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact -->
+    <!-- new -->
+    <div class="news-main fc">
+      <div class="news-inner">
+        <div class="part-title">
+          <h1 class="caps" data-i18n-text="our_news"></h1>
+          <hr>
+        </div>
+        <div class="news-content f">
+          <ul class="news-list">
+            <li>
+              <p class="topics-content"><a href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html"
+                  data-i18n-text="news_1_title"></a>
+              </p>
+              <div class="topics-date">
+                <span class="topics-tag"><span data-i18n-text="news_1_label"></span></span><span
+                  class="topics-time">2019.04.25</span>
+              </div>
+            </li>
+            <li>
+              <p class="topics-content"><a href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html"
+                  data-i18n-text="news_2_title"></a></p>
+              <div class="topics-date">
+                <span class="topics-tag"><span data-i18n-text="news_2_label"></span></span><span
+                  class="topics-time">2019.04.25</span>
+              </div>
+            </li>
+            <li>
+              <p class="topics-content"><a href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html"
+                  data-i18n-text="news_3_title"></a>
+              </p>
+              <div class="topics-date">
+                <span class="topics-tag"><span data-i18n-text="news_3_label"></span></span><span
+                  class="topics-time">2019.04.25</span>
+              </div>
+            </li>
+            <li>
+              <p class="topics-content"><a href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html"
+                  data-i18n-text="news_4_title"></a>
+              </p>
+              <div class="topics-date">
+                <span class="topics-tag"><span data-i18n-text="news_4_label"></span></span><span
+                  class="topics-time">2019.04.25</span>
+              </div>
+            </li>
+            <li>
+              <p class="topics-content"><a href="https://www.ubsc.co.jp/topics/seminar/2019/ubs_1.html"
+                  data-i18n-text="news_5_title"></a>
+              </p>
+              <div class="topics-date">
+                <span class="topics-tag"><span data-i18n-text="news_5_label"></span></span> <span
+                  class="topics-time">2019.04.25</span>
+              </div>
+            </li>
+            <li>
+          </ul>
+        </div>
+        <div class="fc">
+          <div><button class="btn-dark-blue caps" data-i18n-text="learn_more"></button></div>
+        </div>
+      </div>
+    </div>
+    <!-- new -->
+    <!-- event/blog 公司文化 -->
+    <div class="event">
+      <div class="part-title">
+        <h1 class="caps" data-i18n-text="our_events_blog"></h1>
+        <hr>
+      </div>
+      <ul class="event_ul">
+
+        <li>
+          <a href="#">
+            <p class="img">
+              <img width="476" height="320" src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/04/news7-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px">
+            </p>
+            <div class="detail_area">
+              <p class="date">2019-04-10</p>
+              <h6 class="title" data-i18n-text="event_1_title"></h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px"></p>
+            <div class="detail_area">
+              <p class="date">2019-02-02</p>
+              <h6 class="title" data-i18n-text="event_2_title"></h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2018/06/abc-476x320.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""></p>
+            <div class="detail_area">
+              <p class="date">2018-12-15</p>
+              <h6 class="title" data-i18n-text="event_3_title"></h6>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+
+            <p class="img"><img width="476" height="320"
+                src="https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5.jpg"
+                class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
+                srcset="https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5.jpg 476w, https://nicottolabo.info/_kanri/wp-content/uploads/2018/07/news5-300x202.jpg 300w"
+                sizes="(max-width: 476px) 100vw, 476px"></p>
+            <div class="detail_area">
+              <p class="date">2018-07-28</p>
+              <h6 class="title" data-i18n-text="event_4_title"></h6>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <div class="fc">
+        <div><button class="btn-dark-blue caps" data-i18n-text="learn_more"></button></div>
+      </div>
+    </div>
+    <!-- event/blog 公司文化 -->
+    <!-- Team -->
+    <div class="cards">
+      <div class="part-title">
+        <h1 class="caps" data-i18n-text="our_team"></h1>
+        <hr>
+      </div>
+      <div class="team fc">
+        <div class="team-inner f">
+          <div class="team-item ">
+            <div class="team-item-content">
+              <div class="item-img">
+                <img src="./imgs/business/coffee-laptop-business-work-still-life-1080x720.jpg" alt="">
+                <div class="mask-light">
+                  <a href="#" class="btn-mask" data-i18n-text="learn_more"></a>
+                </div>
+              </div>
+              <div class="item-text">
+                <h3 class="caps"><a href="#" class="clear-a" data-i18n-text="team_1_title"></a></h3>
+                <p data-i18n-text="team_1_content"></p>
+              </div>
+            </div>
+          </div>
+          <div class="team-item ">
+            <div class="team-item-content">
+              <div class="item-img rel">
+                <img
+                  src="./imgs/business/sketching-startup-website-ideas-on-paper_free_stock_photos_picjumbo_HNCK4890-1080x720.jpg"
+                  alt="">
+                <div class="mask-light">
+                  <a href="#" class="btn-mask" data-i18n-text="learn_more"></a>
+                </div>
+              </div>
+              <div class="item-text">
+                <h3 class="caps"><a href="#" class="clear-a" data-i18n-text="team_2_title"></a></h3>
+                <p data-i18n-text="team_2_content"></p>
+              </div>
+            </div>
+          </div>
+          <div class="team-item ">
+            <div class="team-item-content">
+              <div class="item-img">
+                <img src="./imgs/business//business-woman-working-on-laptop-in-her-office-1080x720.jpg" alt="">
+                <div class="mask-light">
+                  <a href="#" class="btn-mask" data-i18n-text="learn_more"></a>
+                </div>
+              </div>
+              <div class="item-text">
+                <h3 class="caps"><a href="#" class="clear-a" data-i18n-text="team_3_title"></a></h3>
+                <p data-i18n-text="team_3_content"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fc">
+        <div><button class="btn-dark-blue caps" data-i18n-text="learn_more"></button></div>
+      </div>
+    </div>
+    <!-- Team -->
+    <!-- web-end -->
+    <div class="web-end">
+      <!-- map -->
+      <div class="map fc">
+        <div class="map-inner">
+          <div class="map-container fc ">
+            <div class="map-height z100">
+              <div id="map"></div>
+            </div>
+          </div>
+          <div class="map-content z100">
+            <div class="content-text z100">
+              <h2 data-i18n-text="address"></h2>
+              <p data-i18n-text="address_1"></p>
+              <p data-i18n-text="address_2"></p>
+              <b data-i18n-text="tel"></b>
+              <br>
+              <b data-i18n-text="fax"></b>
+              <div><a href="#" class="caps clear-a" data-i18n-text="more"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- double footer -->
+      <footer class="footer bg-dark-blue fc">
+        <div class="footer-inner rel  ">
+          <h1 style="color:#fff;">Bizplus</h1>
+          <div class="footer__wrapper">
+            <ul class="footer__links c-white ">
+              <li>
+                <h6 class="caps" data-i18n-text="information"></h6>
+                <ul class="footer__sublinks">
+                  <li><a href="#" class="h6" data-i18n-text="company_profile"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="business_philosophy"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="representative_s_greetings"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="privacy_policy"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="organizational_chart"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="access"></a></li>
+                </ul>
+              </li>
+              <li>
+                <h6 class="caps" data-i18n-text="business_field"></h6>
+                <ul class="footer__sublinks">
+                  <li><a href="#" class="h6" data-i18n-text="business_summary"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="quality_control"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="project_management"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="development_language_and_environment"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="foreign_temporary_staffing_business"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="commission_proposal"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="other_business"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="development_performance"></a></li>
+                </ul>
+              </li>
+              <li>
+                <h6 class="caps" data-i18n-text="company_culture"></h6>
+                <ul class="footer__sublinks">
+                  <li><a href="#" class="h6" data-i18n-text="welfare"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="leisure_and_entertainment"></a></li>
+                  <li><a href="#" class="h6" data-i18n-text="medical_insurance"></a></li>
+                </ul>
+              </li>
+              <li>
+                <h6 class="caps" data-i18n-text="recruitment_information"></h6>
+              </li>
+              <li>
+                <h6 class="caps" data-i18n-text="contact_us"></h6>
+              </li>
+            </ul>
+            <div class="footer__newsletter c-white x">
+              <h6 class="caps">Keep up with Bizplus</h6>
+              <p class="h6">A Plus For Your Business.</p>
+              <div class="footer-from rel">
+                <form class="newsletter rel bg-dark-blue is-light">
+                  <input type="email" class="reader" id="email" name="email" placeholder="Your email">
+                  <button>
+                    <i class="fas fa-arrow-right fade-out"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="colophon bg-darkest-blue rel ">
+        <div class="fc rel x">
+          <div class="colophon__wrapper f fw jcb">
+            <ul class="colophon__links c-white">
+              <li><span>©
+                  <!-- -->2019
+                  <!-- --> Clare, Inc.</span></li>
+              <li>
+                <a href="/" class="fade-out"> Terms &amp; HZNU</a></li>
+              <li>
+                <a href="/" class="fade-out"> Design by XQ.</a></li>
+            </ul>
+            <ul class="colophon__social f aic x c-white">
+              <li><a class="fade-out" href="https://facebook.com/clarepaint" target="_blank">
+                  <i class="fab fa-line"></i>
+                </a>
+              </li>
+              <li><a class="fade-out" href="https://twitter.com/clarepaint" target="_blank">
+                  <i class="fab fa-twitter-square"></i>
+                </a></li>
+              <li><a class="fade-out" href="https://instagram.com/clarepaint" target="_blank"><i
+                    class="fab fa-facebook-square"></i></a>
+              </li>
+              <li><a class="fade-out" href="https://pinterest.com/clare_paint" target="_blank"><i
+                    class="fab fa-weixin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.i18n.properties.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script>
+
+    <!-- init -->
+
+    <script src="./js/main.js"></script>
+    <script src="./js/map.js"></script>
+    <script type="text/javascript" src="./js/handleFoldClick.js"></script>
+</body>
+
+</html>
