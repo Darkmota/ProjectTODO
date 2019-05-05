@@ -153,8 +153,8 @@ service nginx restart
 - [ ] 前端已知的问题如下
   - [ ] 桌面端header
     - [ ] logo采用的字体会随着locale变化，有待商榷
-    - [ ] locale=en_US的时候，BUSNINESS下有的条目显示超出
-    - [ ] 动画切换显得缓慢，缺少活力
+    - [x] locale=en_US的时候，BUSNINESS下有的条目显示超出
+    - [x] 动画切换显得缓慢，缺少活力
   - [ ] 移动端header
     - [ ] 弹出和缩回动画太慢
     - [ ] 二级菜单弹出的时候，对应一级菜单项没有箭头旋转，和桌面版不统一
@@ -182,3 +182,10 @@ service nginx restart
     - [ ] footer菜单最后两项在降低宽度的时候会出现意料之外的折叠
   - [ ] 其他问题
     - [ ] 加载资源过大，需要处理
+
+## 2019-5-5
+
+### 谢强
+- [x] 修改header的locale=en_US的时候，BUSNINESS下有的条目显示超出的问题
+- [x] 修改header动画效果
+- [x] 修改全局更多按钮动画效果
