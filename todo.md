@@ -88,12 +88,12 @@ service nginx restart
 - [ ] 商讨静态数据/数据库可修改数据/废弃的数据的内容
 
 ### 谢强
+- [x] 网站设计
 - [x] 添加section分界栏
 - [x] 目标区域添加蒙版
 - [x] 添加页面移动动画
 - [x] 首页serve区域
-- [ ] 首页文化(blog)区域
-
+- [x] 首页文化(blog)区域
 - [x] 首页footer区域
 - [x] map
 - [x] header优化
@@ -107,9 +107,10 @@ service nginx restart
 
 ## 2019-5-1
 ### 谢强
+- [x] 网站设计
 - [x] 首页布局
 - [x] 首页文化(news/blog)区域
-- [x] header优化,造作事件
+- [x] header优化,添加事件
 - [x] 移动端适配
 
 ## 2019-5-1
@@ -130,7 +131,7 @@ service nginx restart
 - [x] 将目前制作的所有内容i18n化
 
 ### 谢强
-- [x] 移动端适配
+- [x] 各板块移动端适配
 ### 徐鑫雨
 
 - [x] 添加二级菜单动画效果
@@ -142,5 +143,4 @@ service nginx restart
 ## 2019-5-3
 
 ###谢强
-
 - [x] 走马灯标语-手机-pad-PC
