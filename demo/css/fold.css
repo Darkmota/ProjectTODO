@@ -1,5 +1,7 @@
 @media screen and (min-width:1200px) {
-
+  .main-content{
+    opacity: 1
+  }
   .left-fold,
   .second-menu,
   .second-menu-nav {
