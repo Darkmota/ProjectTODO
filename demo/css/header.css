@@ -146,7 +146,6 @@
     display: block;
     font-size: 14px;
     transition: all .2s 0s cubic-bezier(.165, .84, .44, 1);
-
   }
 
   .expand:hover>ul {
@@ -228,6 +227,7 @@
     display: block;
     position: absolute;
     top: 80px;
+    left: 125px;
   }
 
   .nav-lan .lan-select>li>a:hover {
@@ -240,7 +240,6 @@
     opacity: 0.75;
     color: #264989;
     transition: all .2s cubic-bezier(.165, .84, .44, 1);
-    ;
   }
 
   .nav-search {
