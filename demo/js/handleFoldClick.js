@@ -4,15 +4,9 @@ $(document).ready(function (e) {
             $(".second-menu").animate({
                 left: '-80%'
             }, 600);
-            $(".main-content").animate({
-                opacity: 1
-            }, 600);
         } else {
             $(".second-menu").animate({
                 left: '0%'
-            }, 600);
-            $(".main-content").animate({
-                opacity: 0.5
             }, 600);
         }
     });
