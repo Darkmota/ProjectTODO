@@ -189,6 +189,7 @@
     height: 100%;
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .nav-lan:hover>div>i {
@@ -213,7 +214,6 @@
     border-radius: 0.45rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
     background-color: #fff;
-    position: relative;
     opacity: 1;
     transition: all .2s 0s cubic-bezier(.165, .84, .44, 1);
   }
@@ -227,7 +227,7 @@
     display: block;
     position: absolute;
     top: 80px;
-    left: 125px;
+    left: 0;
   }
 
   .nav-lan .lan-select>li>a:hover {

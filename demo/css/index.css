@@ -1,31 +1,6 @@
 /* 走马灯 */
 @media screen and (min-width:1200px) {
-  .view-slide {
-    position: relative;
-  }
 
-  .visual_areaTxt {
-    font-family: 'Courier New', Courier, monospace;
-    width: 70%;
-    box-sizing: border-box;
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 10%;
-    color: #fff;
-    opacity: 1;
-    padding: 0 20px;
-    margin-top: 28px;
-  }
-
-  .visual_inner .visual_title {
-    font-size: 66px;
-  }
-
-  .visual_inner .visual_text {
-    margin: 0;
-    font-size: 30px;
-  }
 
   .carousel {
     height: calc(100vh - 80px);
@@ -38,6 +13,36 @@
     cursor: pointer;
   }
 
+  .carousel-caption {
+    position: relative;
+  }
+
+  /* .view-slide {
+    position: relative;
+  } */
+
+  .visual_areaTxt {
+    font-family: 'Courier New', Courier, monospace;
+    width: 70%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 333;
+    top: 0;
+    left: 0;
+    color: #333;
+    opacity: 1;
+    padding: 0 20px;
+    margin-top: 28px;
+  }
+
+  .carousel-caption .visual_title {
+    font-size: 66px;
+  }
+
+  .carousel-caption .visual_text {
+    margin: 0;
+    font-size: 30px;
+  }
 
   /* section  过渡*/
   .bg {
@@ -1451,7 +1456,7 @@
 }
 
 .about-inner {
-  width: 60%;
+  width: 70%;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }

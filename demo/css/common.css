@@ -120,6 +120,7 @@ body {
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
     margin-top: 2rem;
+    outline: none;
   }
 }
 
@@ -138,6 +139,7 @@ body {
     transition-property: background-color, color;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+    outline: none;
     margin-top: 2rem;
   }
 }
@@ -157,6 +159,7 @@ body {
     transition-property: background-color, color;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
+    outline: none;
     margin-top: 2rem;
   }
 }
@@ -169,6 +172,8 @@ body {
   transition-property: background-color, color;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
+  outline: none;
+
 }
 
 /* mask */
