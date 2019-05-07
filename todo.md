@@ -216,4 +216,8 @@ service nginx restart
 ### 谢强
   - [x] about us 矢量图修改(文字)
   - [x] header语言的弹窗修改，位置不会太靠右侧
-  - [ ] 
+
+## 2019-5-8
+
+### 谢强
+  - [x] 自定义完整走马灯(拜托bootstrap)
