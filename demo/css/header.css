@@ -617,40 +617,24 @@
     transition-timing-function: ease-out;
   }
 
-  .nav-lan {
-    display: flex;
-    align-items: center;
-  }
-
-  .nav-lan>div>i {
-    transform: rotate(180deg);
-  }
-
-  .nav-lan:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
   .nav-lan .lan-select {
-    display: none;
+    width: 100%;
     list-style: none;
     font-weight: normal;
-    padding: 10px 1rem 10px 1rem;
-    border-radius: 0.45rem;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.135);
     background-color: #fff;
+    align-items: center;
     position: absolute;
-    bottom: 15px;
-    opacity: 1;
+    left: 0px;
+    bottom: -5px;
+  }
+
+  .nav-lan .lan-select>li{
+    width: 33.3%;
+    float: left;
   }
 
   .nav-lan .lan-select>li>a {
     text-decoration: none;
-    color: #333;
-  }
-
-  .nav-lan .lan-select>li>a:hover {
-    text-decoration: underline;
     color: #333;
   }
 
@@ -661,32 +645,15 @@
     transition: all .25s;
   }
 
-  .nav-search .icon {
-    margin: auto;
-    margin-top: 3.5px;
-  }
-
   .nav-search {
     transition-duration: 0.25s;
     transition-timing-function: ease-in;
   }
 
-  .nav-search .search-click .search-on {
-    display: block;
-    opacity: 1;
-  }
-
-  .nav-search .search-click .search-off {
-    /* font-size: 19px; */
-    display: none;
-    opacity: 1;
-  }
-
   .search-input {
-    display: none;
     width: 100%;
     position: absolute;
-    top: -78px;
+    bottom: 50px;
     right: 0;
     padding: 1rem;
     border-radius: 0.45rem;
@@ -695,7 +662,7 @@
   }
 
   .search-input input {
-    width: 75%;
+    width: 100%;
     height: 45px;
     float: left;
     outline: none;
@@ -706,31 +673,8 @@
   }
 
   .search-input button {
-    width: 20%;
-    height: 45px;
-    color: #333;
-    margin-left: 8px;
-    padding: 6px 2rem 6px 1rem;
-    border: 2px solid #264989c7;
-    border-radius: 0.45rem;
-    background-color: #fff;
-    outline: none;
-    font-size: 16px;
-    transition-property: background-color, color;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
+    display: none;
   }
-
-  .search-input button:hover {
-    cursor: pointer;
-    color: #fff;
-    background-color: #264989;
-    transition-property: background-color, color;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .search-off {}
 
   .menu-item>ul {
     width: 100%;
