@@ -3,11 +3,11 @@ $(document).ready(function (e) {
         if ($(".second-menu").css('left') === '0px') {
             $(".second-menu").animate({
                 left: '-80%'
-            }, 350);
+            }, 200);
         } else {
             $(".second-menu").animate({
                 left: '0%'
-            }, 350);
+            }, 200);
         }
     });
 
