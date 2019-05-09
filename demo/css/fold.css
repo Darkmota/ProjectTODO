@@ -95,10 +95,10 @@
 
   .second-menu {
     width: 80%;
-    height: 100%;
+    height:70%;
     background-color: #fff;
     position: fixed;
-    top: 60px;
+    top: 80px;
     left: -80%;
     z-index: 9;
     overflow-y: auto;
@@ -109,10 +109,6 @@
     margin: 22.5px;
     margin-top: 30px;
     cursor: pointer;
-  }
-
-  .second-menu-item:hover {
-    color: #ccc;
   }
 
   .expand>ul {
@@ -151,31 +147,20 @@
 
   .second-menu-nav {
     width: 80%;
+    height: 20%;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #ddd;
     position: fixed;
     bottom: 0px;
-    text-align: center;
     background-color: #fff;
   }
 
-  .nav-search {
-    width: 50%;
-    height: 30px;
-    border-right: 1px solid #ddd;
-    display: flex;
-    justify-content: center;
+  .search-click{
+    display: none;
   }
 
-  .nav-lan {
-    width: 50%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
+  .lan{
+    display: none;
   }
 
-  .fa-search {
-    margin-top: 8px;
-  }
 }
