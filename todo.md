@@ -229,4 +229,5 @@ service nginx restart
 
 ## 2019-5-9
 ### 谢强
- - [ ] xxx
+ - [x] 完善轮播图 ~ カルーセルマップを改善する
+ - [x] 移动端：about-us板块，serve板块，work板块，contact板块，news板块，team板块的移动端样式适配

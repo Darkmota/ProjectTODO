@@ -1,14 +1,13 @@
-
 #slideshow {
   width: 100%;
   height: calc(100vh - 80px);
-  margin: 0 auto;
+  /* margin: 0 auto; */
   /*设置在页面水平居中*/
   overflow: hidden;
   position: relative;
 }
 
-#slideshow img {
+#slide-imgs img {
   width: 100%;
   height: calc(100vh - 80px);
   object-fit: cover;
@@ -23,39 +22,43 @@
   /*--重点--定义一个关于透明度的transition*/
 }
 
-#slideshow img.active {
+#slide-imgs img.active {
   opacity: 1;
   /*有active类的图片不透明度为1，即显示图片*/
 }
 
 /*-- 设置页码的样式 --*/
-#slideshow div {
+#slide-down-page {
   position: absolute;
   bottom: 10px;
   left: 50%;
   padding: 5px;
-  margin-left: -57.5px;
-  /*水平居中，算出来宽度是115px*/
+  transform: translate(-50%, -50%);
   border-radius: 25px;
-  background: rgba(255, 255, 255, 0.3);
+  /* background: rgba(255, 255, 255, 0.3); */
 }
 
-#slideshow span {
+#slide-down-page span {
   float: left;
-  width: 15px;
-  height: 15px;
-  border-radius: 15px;
+  width: 20px;
+  height: 4px;
+  /* border-radius: 15px; */
   /*设置页码为圆形*/
-  margin: 0 10px;
-  background: rgb(145, 141, 141);
+  margin: 0 2.5px;
+  background-color: rgba(255, 255, 255, .5);
+  transition: all .5s;
+  cursor: pointer;
 }
 
-#slideshow span.active {
-  background: #fff;
+#slide-down-page span.active {
+  background-color: #fff;
+  width: 28px;
+  transition: all .5s;
+  cursor: pointer;
 }
 
 /*-- 设置左右按钮框的样式 --*/
-#slideshow p {
+#slide-btns p {
   width: 50px;
   line-height: 100px;
   position: absolute;
@@ -64,7 +67,7 @@
   /*设置垂直居中*/
   color: white;
   background: rgba(0, 0, 0, 0.2);
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
@@ -78,39 +81,109 @@
   display: none;
 }
 
-#slideshow p.left {
+#slide-btns p.left {
   left: 0;
 }
 
-#slideshow p.right {
+#slide-btns p.right {
   right: 0;
 }
 
-#slideshow:hover p {
+#slideshow:hover #slide-btns p {
   display: block;
 }
 
-#slideshow p:hover {
+#slide-btns p:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 
 /*-- 设置图片描述文本的样式 --*/
-#slideshow h6 {
+#slide-areatxt {
+  padding: 0;
+}
+
+#slide-areatxt div {
   position: absolute;
-  top: 30px;
-  left: 0px;
-  /*相对于轮播图左侧左移400px*/
-  line-height: 30px;
+  top: 200px;
+  left: 50%;
+  width: 90%;
+  /* text-align: center; */
   padding: 5px 30px;
   font-size: 20px;
   color: white;
-  background-color: rgba(100, 100, 100, 0.6);
+  /* background-color: rgba(100, 100, 100, 0.6); */
   /*用rgba设置一个带透明度的背景颜色*/
   opacity: 0;
   transition: all 0.5s;
+  transform: translate(-50%, -50%);
 }
 
-#slideshow h6.active {
-  left: 0;
+#slide-areatxt div.active {
+  left: 50%;
   opacity: 1;
+}
+
+#slide-areatxt div h1 {
+  font-size: 66px;
+}
+
+@media screen and (max-width:1200px) and (min-width:760px) {
+
+  /*-- 设置图片描述文本的样式 --*/
+  #slide-areatxt div {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 90%;
+    /* text-align: center; */
+    padding: 5px 30px;
+    font-size: 20px;
+    color: white;
+    /* background-color: rgba(100, 100, 100, 0.6); */
+    /*用rgba设置一个带透明度的背景颜色*/
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%);
+  }
+
+  #slide-areatxt div.active {
+    left: 50%;
+    opacity: 1;
+  }
+
+  #slide-areatxt div h1 {
+    font-size: 56px;
+  }
+
+}
+
+@media screen and (max-width:760px) {
+
+  /*-- 设置图片描述文本的样式 --*/
+  #slide-areatxt div {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    width: 85%;
+    padding: 5px 30px;
+    font-size: 20px;
+    color: white;
+    /*用rgba设置一个带透明度的背景颜色*/
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translate(-50%, -50%);
+  }
+
+  #slide-areatxt div.active {
+    left: 50%;
+    opacity: 1;
+  }
+
+  #slide-areatxt div h1 {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+    /* text-align: center; */
+  }
 }
