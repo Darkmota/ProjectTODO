@@ -1,4 +1,124 @@
-/* 走马灯 */
+/* 关于我们 */
+.about-us {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-inner {
+  width: 80%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.about-inner b {
+  color: #838383e8;
+}
+
+.about-inner h1 {
+  /* border-bottom: 3.5px solid #264989;  */
+  margin-top: 7.5px;
+  margin-bottom: 2.5rem;
+}
+
+.about-inner hr {
+  background-color: #264989;
+  height: 3.5px;
+  width: 15%;
+}
+
+.about-inner p {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+
+.about-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.about-icon-item {
+  /* display: block; */
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+
+
+
+
+/* card  */
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* news-common */
+.news-list {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.news-list p {
+  margin: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.news-list li {
+  padding: 10px;
+}
+
+.news-list .topics-content a {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.news-list .topics-content a:hover {
+  color: #333;
+  text-decoration: none;
+  opacity: 0.75;
+  transition-duration: .25s;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity, text-decoration;
+}
+
+.news-list .topics-tag {
+  /* news 标签 */
+  /* height: 20px; */
+  display: inline-block;
+  padding: 0.1em 0.5em 0;
+  background: #feca15;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.86em;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+}
+
+.news-list .topics-time {
+  padding: 10px;
+}
+
+/* new-common */
+
 @media screen and (min-width:1200px) {
 
   /* section  过渡*/
@@ -87,6 +207,72 @@
 
   /* 技能 */
 
+  /* serve-cards */
+  .serve-inner {
+    width: 80%;
+    margin-bottom: 2.5rem;
+  }
+
+  .serve-item {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .serve-item .item-content {
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .serve-item .item-content img {
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.25s ease 0s;
+  }
+
+  .serve-item .item-content img:hover {
+    width: 100%;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.25s ease 0s;
+  }
+
+  .serve-item .item-content .item-txt a {
+    color: #111;
+  }
+
+  .serve-item .item-content .item-txt h3 {
+    color: #111;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+    opacity: 1;
+    transition-duration: .25s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity, text-decoration;
+  }
+
+  .serve-item .item-content .item-txt h3:hover {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 400;
+    opacity: 0.65;
+    transition-duration: .25s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity, text-decoration;
+  }
+
+  .serve-item .item-content .item-txt p {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  /* serve card */
   /* contact-section  */
   .contact {
     background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
@@ -170,8 +356,13 @@
   }
 
 
-
   /* news */
+  .news-main {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .news-inner {
     width: 60%;
     border-radius: 0.45rem;
@@ -180,6 +371,16 @@
     background-color: #fff;
   }
 
+  .news-content {
+    width: 100%;
+  }
+
+
+
+
+  /* news */
+
+  /* work */
   .work_ul {
     list-style: none;
     /* display: flex; */
@@ -897,54 +1098,152 @@
 }
 
 @media screen and (max-width:760px) {
-  .view-slide {
-    position: relative;
+
+  /* 关于我们 */
+  .about-us {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1.5px;
+    display: flex;
+    justify-content: center;
   }
 
-  .visual_areaTxt {
-    font-family: 'Courier New', Courier, monospace;
+  .about-inner {
     width: 90%;
-    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-inner b {
+    color: #838383e8;
+  }
+
+  .about-inner h1 {
+    /* border-bottom: 3.5px solid #264989;  */
+    margin-top: 7.5px;
+    margin-bottom: 2.5rem;
+  }
+
+  .about-inner hr {
+    background-color: #264989;
+    height: 3.5px;
+    width: 30%;
+  }
+
+  .about-inner p {
+    margin: 0 auto;
+    width: 100%;
+    text-indent: 40px;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-icon-item {
+    /* display: block; */
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  /* section  过渡*/
+  .bg {
+    width: 100%;
+    margin-top: 1rem;
+    background-image: url("./../imgs/business/513-1920x968.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    display: block;
+    z-index: 1;
+  }
+
+  .bg::after {
     position: absolute;
-    z-index: 2;
-    top: 48.5%;
-    left: 5.5%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-inner {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .content-inner .section-box {
+    width: 100%;
+    display: block;
     color: #fff;
-    opacity: 1;
-    padding: 0 20px;
-    margin-top: 28px;
   }
 
-  .visual_inner .visual_title {
-    font-size: 40px;
+  .section-box .section-text {
+    width: 100%;
+    display: block;
+    padding: 20px 30px;
   }
 
-  .visual_inner .visual_text {
+  .section-text .section-content p {
     margin: 0;
-    font-size: 18px;
   }
 
-  .carousel {
-    height: calc(100vh - 60px);
-    margin-top: 0px;
+  .section-text .section-content {
+    text-align: center;
+    margin-bottom: 1rem;
   }
 
-  .carousel-img {
-    height: calc(100vh - 60px);
-    object-fit: cover;
+  .section-text .btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-wrap .btn-box {
+    margin: 0 auto;
+    z-index: 5;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.75rem 5rem;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .btn-wrap .btn-box:hover {
     cursor: pointer;
+    color: #111;
+    background-color: #fff;
+    transition-property: background-color, color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
   }
 
+  /* section  过渡*/
   /* serve-cards */
   .serve-inner {
     width: 100%;
-    margin-bottom: 2.5rem;
+    margin-bottom: 0.5rem;
     display: block;
   }
 
   .serve-item {
-    width: 100%;
-    margin: 10%;
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
   }
 
   .serve-item .item-content {
@@ -954,7 +1253,7 @@
 
   .serve-item .item-content img {
     width: 100%;
-    height: auto;
+    height: 190px;
     transform: scale(1);
     transition: all 0.25s ease 0s;
   }
@@ -967,12 +1266,13 @@
   }
 
   .serve-item .item-content .item-txt a {
-    color: #111;
+    color: #333;
   }
 
   .serve-item .item-content .item-txt h3 {
-    color: #111;
-    margin-top: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     opacity: 1;
@@ -992,6 +1292,8 @@
   }
 
   .serve-item .item-content .item-txt p {
+    margin: 0;
+    font-size: 14px;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1000,179 +1302,16 @@
     -webkit-line-clamp: 4;
   }
 
-  .bg {
+  /* serve */
+  /* work-cards */
+  .work {
     width: 100%;
-
-  }
-
-  .content-inner {
-    margin-top: 5rem;
-    width: 100%;
-    height: 270px;
-    background-image: url("./../imgs/business/513-1920x968.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    position: relative;
-    display: block;
-    z-index: 5;
-  }
-
-  .content-inner::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-  }
-
-  .section-box {
-    width: 100%;
-    display: block;
-  }
-
-  .section-text {
-    width: 100%;
-    display: block;
-    padding: 20px;
-
-  }
-
-  .btn-wrap {
-    display: flex;
-    justify-content: center;
-    /* margin: 0 auto; */
-  }
-
-  .btn-box {
-    width: 50%;
-    margin: 0 auto;
-    z-index: 5;
-    color: #fff;
-    font-weight: 500;
-    border: 1px solid white;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
-    transition-property: background-color, color;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-  }
-
-  .btn-box:hover {
-    cursor: pointer;
-    color: #111;
-    background-color: #fff;
-    transition-property: background-color, color;
-    transition-duration: 0.15s;
-    transition-timing-function: ease-in-out;
-  }
-
-  /* section  过渡*/
-
-  /* 技能 */
-
-  /* contact-section  */
-  .contact {
-    background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
-    /* background-size: 100% ; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    overflow: hidden;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
-    position: relative;
-  }
-
-  .contact::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    background-color: black;
-    opacity: 0.5;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .contact .line {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .contact .line .line-inner {
-    display: block;
-  }
-
-  .contact .line .line-inner .line-txt-l {
-    width: 100%;
-    padding: 2%;
-
-  }
-
-  .contact .line .line-inner .line-txt-r {
-    width: 100%;
-    padding: 2%;
-
-  }
-
-  .line .line-inner .txt-item {
-    /* height: 270px; */
-    background-color: #fff;
-    padding: 40px;
-  }
-
-  .line .line-inner .txt-item h4 {
-    text-decoration: underline;
-  }
-
-  .line .line-inner .txt-item p {
-    font-size: 14px;
-    padding: 20px 50px 20px 50px;
-  }
-
-  .line .line-inner .txt-item a {
-    font-size: 24px;
-    color: #333;
-    text-decoration: underline;
-  }
-
-  .line .line-inner .txt-item a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    opacity: 0.75;
-    transition-duration: 0.25s;
-    transition-property: opacity;
-    transition-timing-function: ease-in-out;
-  }
-
-  /* nes */
-  .news-inner {
-    width: 90%;
-    border-radius: 0.45rem;
-    padding: 4rem 7.5%;
-    background-color: #fff;
+    margin-bottom: 20px;
   }
 
   .work_ul {
     list-style: none;
-    /* display: flex; */
-    flex-wrap: wrap;
-    margin: 10px;
     padding: 0;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    /* clear: both; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1181,13 +1320,16 @@
 
   .work .work_ul li {
     /* float: left; */
-    width: 80%;
-    margin: 10px;
+    width: 95%;
+    padding: 10px 10px 5px 10px;
     position: relative;
     overflow: hidden;
     -webkit-transition: all .5s 0s ease-out;
     -moz-transition: all .5s 0s ease-out;
     transition: all .5s 0s ease-out;
+    border-radius: 0.45rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+    margin-bottom: 10px;
   }
 
   .work .work_ul li a {
@@ -1210,11 +1352,12 @@
 
   .work .work_ul li .img img {
     width: 100%;
-    height: auto;
+    height: 190px;
   }
 
   .work .work_ul li .detail_area {
-    padding: 4% 4%;
+    margin-top: 5px;
+    text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1228,6 +1371,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .work .work_ul li:hover {
@@ -1249,6 +1395,110 @@
     color: #fff;
   }
 
+  /* worl */
+
+
+  /* contact-section  */
+  .contact {
+    margin-top: 2rem;
+    background-image: url("./../imgs/business/market-street-in-san-francisco-california-picjumbo-com.jpg");
+    /* background-size: 100% ; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+  }
+
+  .contact::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact .line {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 5;
+  }
+
+  .contact .line .line-inner {
+    display: block;
+  }
+
+  .contact .line .line-inner .line-txt-l {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .contact .line .line-inner .line-txt-r {
+    width: 100%;
+  }
+
+  .line .line-inner .txt-item {
+    background-color: #fff;
+    padding: 10px;
+  }
+
+  .line .line-inner .txt-item h4 {
+    color: #333;
+  }
+
+  .line .line-inner .txt-item p {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .line .line-inner .txt-item a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: underline;
+  }
+
+  .line .line-inner .txt-item a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.75;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+  }
+
+  /* news */
+  .news-main {
+    width: 100%;
+  }
+
+  .news-inner {
+    width: 100%;
+    border-radius: 0.45rem;
+    padding: 2rem 2rem;
+    background-color: #fff;
+  }
+
+  .news-content {
+    width: 100%;
+  }
+
+  .news-list {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* news */
   /* event */
   .event {
     width: 100%;
@@ -1259,21 +1509,25 @@
   .event_ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
     padding-bottom: 20px;
   }
 
   .event .event_ul li {
-    /* float: left; */
-    margin: 10%;
-    width: 80%;
+    width: 95%;
+    padding: 10px 10px 5px 10px;
     position: relative;
     overflow: hidden;
-    z-index: 0;
-
     -webkit-transition: all .5s 0s ease-out;
     -moz-transition: all .5s 0s ease-out;
     transition: all .5s 0s ease-out;
+    border-radius: 0.45rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+    margin-bottom: 10px;
   }
 
   .event .event_ul li a {
@@ -1296,11 +1550,11 @@
 
   .event .event_ul li .img img {
     width: 100%;
-    height: auto;
+    height: 190px;
   }
 
   .event .event_ul li .detail_area {
-    padding: 4% 4%;
+    margin-top: 5px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1314,6 +1568,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .event .event_ul li:hover {
@@ -1343,17 +1600,18 @@
 
   .team-inner {
     width: 100%;
-    margin: 10%;
     display: block;
   }
 
   .team-item {
-    width: 100%;
+    width: 95%;
+    padding: 10px;
+    margin: 0 auto;
   }
 
   .team-item-content img {
     width: 100%;
-    height: auto;
+    height: 190px;
   }
 
   .team-item .item-img {
@@ -1370,8 +1628,9 @@
   }
 
   .team-item-content .item-text h3 {
-    color: #111;
-    margin-top: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     opacity: 1;
@@ -1391,6 +1650,8 @@
   }
 
   .team-item-content .item-text p {
+    margin: 0;
+    font-size: 14px;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1399,251 +1660,3 @@
     -webkit-line-clamp: 4;
   }
 }
-
-
-/* 关于我们 */
-.about-us {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  letter-spacing: 1.5px;
-  display: flex;
-  justify-content: center;
-}
-
-.about-inner {
-  width: 70%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.about-inner b {
-  color: #838383e8;
-}
-
-.about-inner h1 {
-  /* border-bottom: 3.5px solid #264989;  */
-  margin-top: 7.5px;
-  margin-bottom: 2.5rem;
-}
-
-.about-inner hr {
-  background-color: #264989;
-  height: 3.5px;
-  width: 15%;
-}
-
-.about-inner p {
-  margin: 0 auto;
-  width: 80%;
-  margin-bottom: 1.5rem;
-}
-
-.about-icon {
-  display: flex;
-  justify-content: center;
-}
-
-.about-icon-item {
-  /* display: block; */
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-
-
-/* section  过渡*/
-.content-inner {
-  margin-top: 5rem;
-  width: 100%;
-  height: 270px;
-  background-image: url("./../imgs/business/513-1920x968.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 5;
-}
-
-.content-inner::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
-  background-color: black;
-  opacity: 0.5;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-}
-
-.section-box {
-  color: #fff;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-}
-
-.section-text h3 {
-  text-align: center;
-}
-
-
-
-/* section  过渡*/
-
-/* card  */
-.cards {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-/* serve-cards */
-.serve-inner {
-  width: 80%;
-  margin-bottom: 2.5rem;
-}
-
-.serve-item {
-  width: 100%;
-  padding: 15px;
-  margin: 0;
-}
-
-.serve-item .item-content {
-  overflow: hidden;
-  text-align: center;
-}
-
-.serve-item .item-content img {
-  width: 100%;
-  height: auto;
-  transform: scale(1);
-  transition: all 0.25s ease 0s;
-}
-
-.serve-item .item-content img:hover {
-  width: 100%;
-  cursor: pointer;
-  transform: scale(1.2);
-  transition: all 0.25s ease 0s;
-}
-
-.serve-item .item-content .item-txt a {
-  color: #111;
-}
-
-.serve-item .item-content .item-txt h3 {
-  color: #111;
-  margin-top: 1rem;
-  font-weight: bold;
-  text-decoration: underline;
-  opacity: 1;
-  transition-duration: .25s;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity, text-decoration;
-}
-
-.serve-item .item-content .item-txt h3:hover {
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 400;
-  opacity: 0.65;
-  transition-duration: .25s;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity, text-decoration;
-}
-
-.serve-item .item-content .item-txt p {
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-}
-
-/* work-cards */
-.work {
-  width: 100%;
-  margin-top: 40px;
-  margin-bottom: 60px;
-}
-
-/* news */
-.news-main {
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.news-content {
-  width: 100%;
-}
-
-.news-list {
-  width: 100%;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.news-list p {
-  margin: 0;
-  margin-bottom: 5px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.news-list li {
-  padding: 10px;
-}
-
-.news-list .topics-content a {
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
-  text-decoration: underline;
-}
-
-.news-list .topics-content a:hover {
-  color: #333;
-  text-decoration: none;
-  opacity: 0.75;
-  transition-duration: .25s;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity, text-decoration;
-}
-
-.news-list .topics-tag {
-  /* news 标签 */
-  /* height: 20px; */
-  display: inline-block;
-  padding: 0.1em 0.5em 0;
-  background: #feca15;
-  color: white;
-  text-align: center;
-  font-weight: 400;
-  font-size: 0.86em;
-  letter-spacing: 0.5px;
-  border-radius: 5px;
-}
-
-.news-list .topics-time {
-  padding: 10px;
-}
-
-
-
-/* team */

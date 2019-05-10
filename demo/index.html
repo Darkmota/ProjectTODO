@@ -50,6 +50,8 @@
               <li><a href="#" data-i18n-text-right="privacy_policy"><i class="fas fa-arrow-right"></i></a></li>
               <li><a href="#" data-i18n-text-right="organizational_chart"><i class="fas fa-arrow-right"></i></a></li>
               <li><a href="#" data-i18n-text-right="access"><i class="fas fa-arrow-right"></i></a></li>
+            <li><a href="#" data-i18n-text-right="company_culture"><i class="fas fa-arrow-right"></i></a></li>
+            
             </ul>
           </div>
           <div class="menu-item caps expand">
@@ -59,6 +61,7 @@
             <ul>
               <li><a href="#" data-i18n-text-right="business_summary"><i class="fas fa-arrow-right"></i></a></li>
               <li><a href="#" data-i18n-text-right="quality_control"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="project_management"><i class="fas fa-arrow-right"></i></a></li>
               <li><a href="#" data-i18n-text-right="development_language_and_environment"><i
                     class="fas fa-arrow-right"></i></a></li>
               <li><a href="#" data-i18n-text-right="foreign_temporary_staffing_business"><i
@@ -69,11 +72,11 @@
             </ul>
           </div>
           <div class="menu-item caps expand">
-            <span data-i18n-text-left="company_culture">
+            <span data-i18n-text-left="welfare">
               <i class="fas fa-angle-down svg-down"></i>
             </span>
             <ul>
-              <li><a href="#" data-i18n-text-right="welfare"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="education"><i class="fas fa-arrow-right"></i></a></li>
               <li><a href="#" data-i18n-text-right="leisure_and_entertainment"><i class="fas fa-arrow-right"></i></a>
               </li>
               <li><a href="#" data-i18n-text-right="medical_insurance"><i class="fas fa-arrow-right"></i></a></li>
@@ -124,6 +127,8 @@
         <li><a href="#" data-i18n-text-right="privacy_policy"><i class="fas fa-arrow-right"></i></a></li>
         <li><a href="#" data-i18n-text-right="organizational_chart"><i class="fas fa-arrow-right"></i></a></li>
         <li><a href="#" data-i18n-text-right="access"><i class="fas fa-arrow-right"></i></a></li>
+      <li><a href="#" data-i18n-text-right="company_culture"><i class="fas fa-arrow-right"></i></a></li>
+            
       </ul>
     </div>
     <div class="second-menu-item caps expand">
@@ -133,6 +138,7 @@
       <ul>
         <li><a href="#" data-i18n-text-right="business_summary"><i class="fas fa-arrow-right"></i></a></li>
         <li><a href="#" data-i18n-text-right="quality_control"><i class="fas fa-arrow-right"></i></a></li>
+         <li><a href="#" data-i18n-text-right="project_management"><i class="fas fa-arrow-right"></i></a></li>
         <li><a href="#" data-i18n-text-right="development_language_and_environment"><i
               class="fas fa-arrow-right"></i></a></li>
         <li><a href="#" data-i18n-text-right="foreign_temporary_staffing_business"><i
@@ -143,14 +149,14 @@
       </ul>
     </div>
     <div class="second-menu-item caps expand">
-      <span data-i18n-text-left="company_culture">
+      <span data-i18n-text-left="welfare">
         <i class="fas fa-angle-down svg-down"></i>
       </span>
       <ul>
-        <li><a href="#" data-i18n-text-right="welfare"><i class="fas fa-arrow-right"></i></a></li>
-        <li><a href="#" data-i18n-text-right="leisure_and_entertainment"><i class="fas fa-arrow-right"></i></a>
-        </li>
-        <li><a href="#" data-i18n-text-right="medical_insurance"><i class="fas fa-arrow-right"></i></a></li>
+        <li><a href="#" data-i18n-text-right="education"><i class="fas fa-arrow-right"></i></a></li>
+              <li><a href="#" data-i18n-text-right="leisure_and_entertainment"><i class="fas fa-arrow-right"></i></a>
+              </li>
+              <li><a href="#" data-i18n-text-right="medical_insurance"><i class="fas fa-arrow-right"></i></a></li>
       </ul>
     </div>
     <div class="second-menu-item caps" data-i18n-text="recruitment_information"></div>
@@ -186,22 +192,37 @@
     <!-- carousel -->
     <div id="slideshow">
       <!-- 插入轮播的图片们 -->
-      <img class="active" src="./imgs/business/354-1920x968.jpg" />
-      <img src="./imgs/business/418-1920x968.jpg" />
-      <img src="./imgs/business/857-1920x968.jpg" />
+      <div id="slide-imgs">
+        <img class="active" src="./imgs/business/354-1920x968.jpg" />
+        <img src="./imgs/business/418-1920x968.jpg" />
+        <img src="./imgs/business/857-1920x968.jpg" />
+      </div>
       <!-- 插入轮播的页码们 -->
-      <div>
+      <div id="slide-down-page">
         <span class="active" name="0"></span>
         <span name="1"></span>
         <span name="2"></span>
       </div>
       <!--插入左边和右边的按钮框-->
-      <p class="left">&lt;</p>
-      <p class="right">&gt;</p>
+      <div id="slide-btns">
+        <p class="left"><i class="fas fa-angle-left"></i></p>
+        <p class="right"><i class="fas fa-angle-right"></i></p>
+      </div>
       <!-- 插入图片的描述们 -->
-      <h6 class="active">这是第一幅图片哈哈哈</h6>
-      <h6>这是第二幅图片咩</h6>
-      <h6>到第三幅了！</h6>
+      <div id="slide-areatxt">
+        <div class="active">
+          <h1 data-i18n-text="carousel_1_title"></h1>
+          <p data-i18n-text="carousel_1_content"></p>
+        </div>
+        <div>
+          <h1 data-i18n-text="carousel_2_title"></h1>
+          <p data-i18n-text="carousel_2_content"></p>
+        </div>
+        <div>
+          <h1 data-i18n-text="carousel_3_title"></h1>
+          <p data-i18n-text="carousel_3_content"></p>
+        </div>
+      </div>
     </div>
 
     <!-- carousal -->
@@ -500,7 +521,6 @@
 
         <li>
           <a href="#">
-
             <p class="img"><img width="476" height="320"
                 src="https://nicottolabo.info/_kanri/wp-content/uploads/2019/02/RPT5952.jpg"
                 class="attachment-news-thumbnail size-news-thumbnail wp-post-image" alt=""
@@ -717,7 +737,7 @@
     <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD89pzZjSgZCdOv_STBBR6jSWaObqwGNRM"></script> -->
 
     <!-- init -->
 
